@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Андреева](https://up.htmlacademy.ru/adaptive/14/user/307607).
-* Наставник: `Неизвестно`.
+* Наставник: Юлия Антонова.
 
 ---
 
