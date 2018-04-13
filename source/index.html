@@ -10,14 +10,20 @@
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Интернет магазин товаров для дома Мишка">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню"></button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-label="Закрыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href=""></a></li>
-            <li class="site-list__item"><a href=""></a></li>
-            <li class="site-list__item"><a href=""></a></li>
-            <li class="site-list__item"><a href=""></a></li>
-            <li class="site-list__item"><a href=""></a></li>
+            <li class="site-list__item"><a href="">Каталог товаров</a></li>
+            <li class="site-list__item"><a href="">Вязание на заказ</a></li>
+          </ul>
+          <form class="main-nav__search" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
+          </form>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="" class="user-list__cart">Корзина: пока пуста</a>
+            </li>
           </ul>
         </div>
       </nav>
