@@ -7,18 +7,20 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Интернет магазин товаров для дома Мишка">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__logo">
+        <a href="" class="page-header__image">
+          <img src="img/logo-mobile.svg" width="89px" height="37px" alt="Интернет-магазин товаров для дома Мишка">
+        </a>
         <button class="main-nav__toggle main-nav__toggle--active" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="">Каталог товаров</a></li>
-            <li class="site-list__item"><a href="">Вязание на заказ</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="">Вязание на заказ</a></li>
           </ul>
-          <form class="main-nav__search" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-nav__search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
           </form>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
@@ -29,10 +31,10 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-main__title">Милые штуки<br> ручной<br> работы для дома</h1>
       <ul class="page-main__nav-list">
-        <li class="page-main__nav-item"><a href="">Предметы интерьера</a></li>
-        <li class="page-main__nav-item"><a href="">Детские игрушки</a></li>
+        <li class="page-main__nav-item"><a class="page-main__nav-link" href="">Предметы интерьера</a></li>
+        <li class="page-main__nav-item"><a class="page-main__nav-link" href="">Детские игрушки</a></li>
       </ul>
       <section class="popular-items">
         <h2 class="visually-hidden">Полулярные товары Интернет магазина Мишка</h2>
@@ -61,7 +63,7 @@
             </div>
             <div class="popular-item__image">
               <a href="#">
-                <img src="http://placehold.it/150x100" width="" height="" alt="Вязаные корзинки">
+                <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
               </a>
             </div>
             <span class="popular-item__price">Цена: 990 руб.</span>
@@ -73,8 +75,8 @@
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item">Экологически чистые материалы</li>
-          <li class="advantages__item">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item">Скандинавский стиль<br> по российской цене</li>
+          <li class="advantages__item">Увеличивает лайки<br> на фотографиях</li>
           <li class="advantages__item">Связано вручную с любовью и умилением</li>
           <li class="advantages__item">Поддержка отечественного производителя</li>
           <li class="advantages__item">Поставляется в подарочной упаковке</li>
