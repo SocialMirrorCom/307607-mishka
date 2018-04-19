@@ -7,18 +7,20 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Интернет магазин товаров для дома Мишка">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__logo">
+        <a href="" class="page-header__image">
+          <img src="img/logo-mobile.svg" width="89px" height="37px" alt="Интернет-магазин товаров для дома Мишка">
+        </a>
         <button class="main-nav__toggle main-nav__toggle--active" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="">Каталог товаров</a></li>
-            <li class="site-list__item"><a href="">Вязание на заказ</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="">Вязание на заказ</a></li>
           </ul>
-          <form class="main-nav__search" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-nav__search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
           </form>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
