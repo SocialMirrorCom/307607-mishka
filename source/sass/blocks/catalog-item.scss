@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
 
+  width: 260px;
   margin-bottom: 30px;
   min-height: 374px;
   border: 1px solid #ededed;
+}
+.catalog-item__image {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .catalog-item__title {
