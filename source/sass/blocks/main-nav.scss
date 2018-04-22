@@ -1,0 +1,37 @@
+.main-nav__list,
+.main-nav__search {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__form {
+  display: flex;
+  justify-content: center;
+  padding: 23px 20px;
+  border-top: 1px solid #ececec;
+}
+
+.main-nav__search {
+  font-weight: bold;
+  font-size: 17px;
+  color: #000000;
+
+  width: 280px;
+  padding-left: 56px;
+  border: none;
+}
+
+.main-nav__search::placeholder {
+  font-weight: bold;
+  font-size: 17px;
+  color: #000000;
+}

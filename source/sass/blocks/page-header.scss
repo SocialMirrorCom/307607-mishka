@@ -1,0 +1,19 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+
+  min-height: 80px;
+  width: 89px;
+  margin: 0 auto;
+}
+
+.page-header__toggle {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 30px;
+}

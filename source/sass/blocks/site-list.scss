@@ -1,0 +1,23 @@
+.site-list__link {
+  font-weight: bold;
+  font-size: 17px;
+  color: #000000;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 56px;
+  width: 220px;
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #ececec;
+}
