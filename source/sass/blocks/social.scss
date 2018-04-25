@@ -34,3 +34,10 @@
   height: 20px;
   background-image: url("../img/icon-twitter.svg");
 }
+
+@media (min-width: 768px) {
+  .social {
+    width: 200px;
+  }
+}
+

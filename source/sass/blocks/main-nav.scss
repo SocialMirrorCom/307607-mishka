@@ -35,3 +35,21 @@
   font-size: 17px;
   color: #000000;
 }
+
+@media (min-width: 768px) {
+  .main-nav__form {
+    border: 1px solid #ececec;
+    width: 43px;
+    height: 42px;
+  }
+
+  .main-nav__search {
+    width: 80px;
+  }
+
+  .main-nav__search::placeholder {
+    color: #ffffff;
+  }
+}
+
+

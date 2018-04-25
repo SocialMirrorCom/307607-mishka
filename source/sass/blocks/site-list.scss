@@ -21,3 +21,20 @@
   padding-right: 20px;
   border-top: 1px solid #ececec;
 }
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__link {
+    width: 160px;
+    padding-left: 0;
+  }
+
+  .site-list__item {
+    padding-left: 0;
+    border: none;
+  }
+}

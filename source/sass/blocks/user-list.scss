@@ -22,3 +22,19 @@
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
 }
+
+@media (min-width: 768px) {
+  .user-list__cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 210px;
+    padding-left: 0;
+  }
+
+  .user-list__item {
+    width: 260px;
+    height: 42px;
+    border: none;
+  }
+}

@@ -6,7 +6,8 @@
 .popular-item__title,
 .popular-item__description,
 .popular-item__marker,
-.popular-item__price {
+.popular-item__price,
+.popular-item__parameters-list {
   margin: 0;
   padding: 0;
 }
@@ -69,4 +70,70 @@
   font-weight: bold;
   font-size: 17px;
   margin-bottom: 26px;
+}
+
+@media (min-width: 768px) {
+  .popular-items {
+    width: 668px;
+  }
+
+  .popular-items__wrapper {
+    width: 668px;
+  }
+
+  .popular-item {
+    position: relative;
+    width: 668px;
+    height: 510px;
+  }
+
+  .popular-item__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 430px;
+  }
+
+  .popular-item__marker {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 28px;
+    width: 80px;
+    text-align: center;
+  }
+
+  .popular-item__description {
+    width: 290px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .popular-item__parameters {
+    width: 290px;
+    margin-bottom: 50px;
+  }
+
+  .popular-item__image {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 334px;
+    height: 404px;
+    margin-bottom: 0;
+  }
+
+  .popular-item__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .popular-item__price {
+    width: 290px;
+    margin-bottom: 38px;
+  }
+
+  .popular-item__buy {
+    width: 290px;
+  }
 }

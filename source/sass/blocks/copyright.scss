@@ -26,3 +26,13 @@
   background-repeat: no-repeat;
   background-position: 0 5px;
 }
+
+@media (min-width: 768px) {
+  .copyright {
+    width: 190px;
+  }
+
+  .copyright__text {
+    margin-left: 0;
+  }
+}

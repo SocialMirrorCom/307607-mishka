@@ -56,7 +56,29 @@
   font-weight: bold;
   font-size: 19px;
   color: #ffffff;
+  width: 125px;
   margin-left: 29px;
-  margin-right: 200px;
+  margin-right: 180px;
   margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    width: 100%;
+  }
+
+  .page-main__title {
+    padding-top: 155px;
+    height: 626px;
+  }
+
+  .page-main__nav-list {
+    display: flex;
+    justify-content: center;
+    width: 668px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
 }
