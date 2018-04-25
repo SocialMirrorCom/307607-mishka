@@ -10,3 +10,10 @@
     width: 668px;
   }
 }
+
+@media (min-width: 1200px) {
+  .catalog-items__wrapper {
+    flex-direction: row;
+    width: 1048px;
+  }
+}

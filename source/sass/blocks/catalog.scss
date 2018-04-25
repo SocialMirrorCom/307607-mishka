@@ -1,7 +1,6 @@
 .catalog {
   display: flex;
   flex-direction: column;
-
 }
 
 .catalog__title {
@@ -25,5 +24,11 @@
 @media (min-width: 768px) {
   .catalog__title {
     height: 227px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .catalog__title {
+    height: 255px;
   }
 }

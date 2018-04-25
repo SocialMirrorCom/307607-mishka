@@ -52,6 +52,7 @@
   min-height: 74px;
   width: 204px;
   margin-left: 28px;
+  margin-top: auto;
   border-top: 1px solid #ededed;
 }
 
@@ -84,5 +85,39 @@
 
   .catalog-item__bottom {
     width: 268px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .catalog-item {
+    flex-direction: column;
+    width: 315px;
+    min-height: 659px;
+    margin-right: 52px;
+  }
+
+  .catalog-item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  .catalog-item__title {
+    margin-bottom: 12px;
+  }
+
+  .catalog-item__image-box {
+    width: 315px;
+    height: 462px;
+  }
+
+  .catalog-item__info {
+    width: 315px;
+  }
+
+  .catalog-item__description {
+    margin-bottom: 45px;
+  }
+
+  .catalog-item__bottom {
+    width: 256px;
   }
 }
