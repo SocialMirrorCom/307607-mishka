@@ -81,4 +81,18 @@
     margin-bottom: 60px;
   }
 
+  .page-main__nav-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main__nav-list {
+    width: 1048px;
+  }
+
+  .page-main__nav-link{
+    margin-right: 370px;
+  }
 }

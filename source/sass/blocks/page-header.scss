@@ -45,7 +45,6 @@
     width: 320px;
     height: 88px;
     margin: 0 auto;
-
   }
 
   .page-header__toggle {
@@ -65,5 +64,27 @@
     flex-direction: row;
 
     width: 340px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header__wrapper {
+    width: 1048px;
+  }
+
+  .page-header__left {
+    width: 700px;
+  }
+
+  .page-header__logo {
+    order: 1;
+  }
+
+  .page-header__nav {
+    width: 380px;
+  }
+
+  .page-header__image img {
+    margin-left: 70px;
   }
 }

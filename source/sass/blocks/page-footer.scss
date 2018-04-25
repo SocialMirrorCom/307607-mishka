@@ -26,10 +26,15 @@
     flex-direction: row;
     justify-content: space-between;
     width: 668px;
-
   }
+
   .page-footer__logo {
     display: block;
   }
+}
 
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 1048px;
+  }
 }

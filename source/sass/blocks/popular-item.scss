@@ -137,3 +137,57 @@
     width: 290px;
   }
 }
+
+@media (min-width: 1200px) {
+  .popular-items {
+    width: 1048px;
+  }
+
+  .popular-items__wrapper {
+    width: 1048px;
+  }
+
+  .popular-item {
+    width: 1048px;
+    height: 636px;
+  }
+
+  .popular-item__description,
+  .popular-item__parameters,
+  .popular-item__price,
+  .popular-item__buy {
+    margin-left: 147px;
+  }
+
+  .popular-item__title {
+    position: absolute;
+    content: "";
+    top: 54px;
+    left: 143px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    width: 600px;
+    z-index: 10;
+  }
+
+  .popular-item__marker {
+    line-height: 17px;
+    top: 68px;
+    left: 47px;
+  }
+
+  .popular-item__description {
+    padding-top: 160px;
+  }
+
+  .popular-item__parameters {
+    margin-bottom: 117px;
+  }
+
+  .popular-item__image {
+    width: 524px;
+    height: 636px;
+  }
+}

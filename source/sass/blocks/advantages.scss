@@ -55,15 +55,24 @@
   }
 
   .advantages__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .advantages__item:nth-of-type(odd) {
     margin-right: 75px;
   }
+}
 
+@media (min-width: 1200px) {
+  .advantages {
+    width: 1048px;
+  }
 
+  .advantages__title,
+  .advantages__list {
+    margin-left: 147px;
+  }
 }
