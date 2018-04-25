@@ -1,5 +1,12 @@
 .catalog-items__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 260px;
+}
+
+@media (min-width: 768px) {
+  .catalog-items__wrapper {
+    width: 668px;
+  }
 }
