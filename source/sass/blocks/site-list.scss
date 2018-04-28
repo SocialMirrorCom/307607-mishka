@@ -33,6 +33,7 @@
   }
 
   .site-list__link {
+    font-size: 15px;
     width: 160px;
     padding-left: 0;
   }
@@ -46,6 +47,24 @@
 @media (min-width: 1200px) {
   .site-list__item--desktop {
     display: block;
+  }
+
+  .site-list__link {
+    font-size: 17px;
+  }
+
+  .site-list__item {
+    height: 35px;
+    padding-top: 30px;
+  }
+
+  .site-list__item:first-of-type {
+    border-right: 1px solid #ececec;
+  }
+
+  .site-list__item:nth-of-type(even) {
+    padding-left: 35px;
+    padding-right: 0;
   }
 
   .site-list__link--desktop {
