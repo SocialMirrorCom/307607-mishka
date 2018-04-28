@@ -30,6 +30,8 @@
   .site-list {
     display: flex;
     flex-direction: row;
+    order: 10;
+    margin-left: -320px;
   }
 
   .site-list__link {
@@ -45,10 +47,6 @@
 }
 
 @media (min-width: 1200px) {
-  .site-list__item--desktop {
-    display: block;
-  }
-
   .site-list__link {
     font-size: 17px;
   }
@@ -56,6 +54,8 @@
   .site-list__item {
     height: 35px;
     padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 35px;
   }
 
   .site-list__item:first-of-type {
@@ -64,7 +64,12 @@
 
   .site-list__item:nth-of-type(even) {
     padding-left: 35px;
-    padding-right: 0;
+  }
+
+  .site-list__item--desktop {
+    display: block;
+    order: 10;
+    padding-top: 20px;
   }
 
   .site-list__link--desktop {
@@ -74,5 +79,8 @@
 
   .site-list {
     flex-wrap: wrap;
+    order: 0;
+    margin-left: 0;
+    width: 470px;
   }
 }
