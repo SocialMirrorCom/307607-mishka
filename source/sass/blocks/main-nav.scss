@@ -13,14 +13,14 @@
   flex-direction: column;
 }
 
-.main-nav__form {
+.page-header__form {
   display: flex;
   justify-content: center;
   padding: 23px 20px;
   border-top: 1px solid #ececec;
 }
 
-.main-nav__search {
+.page-header__search {
   font-weight: bold;
   font-size: 17px;
   color: #000000;
@@ -30,24 +30,24 @@
   border: none;
 }
 
-.main-nav__search::placeholder {
+.page-header__search::placeholder {
   font-weight: bold;
   font-size: 17px;
   color: #000000;
 }
 
 @media (min-width: 768px) {
-  .main-nav__form {
+  .page-header__form {
     border: 1px solid #ececec;
     width: 43px;
     height: 42px;
   }
 
-  .main-nav__search {
+  .page-header__search {
     width: 80px;
   }
 
-  .main-nav__search::placeholder {
+  .page-header__search::placeholder {
     color: #ffffff;
   }
 }

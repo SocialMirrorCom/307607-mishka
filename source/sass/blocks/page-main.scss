@@ -68,8 +68,12 @@
   }
 
   .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+
     padding-top: 155px;
     height: 626px;
+    background-size: cover;
   }
 
   .page-main__nav-list {
@@ -88,6 +92,11 @@
 }
 
 @media (min-width: 1200px) {
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .page-main__nav-list {
     width: 1048px;
   }

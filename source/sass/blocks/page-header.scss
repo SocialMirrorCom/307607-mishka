@@ -27,6 +27,12 @@
   right: 30px;
 }
 
+.page-header__user-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @media (min-width: 768px) {
   .page-header {
     display: flex;
