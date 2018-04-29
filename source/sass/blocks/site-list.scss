@@ -22,6 +22,15 @@
   width: 220px;
 }
 
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
 .site-list__item--desktop {
   display: none;
 }
@@ -44,6 +53,10 @@
     padding-left: 0;
     border: none;
   }
+
+  .site-list__item:first-of-type {
+    padding-right: 7px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -60,6 +73,7 @@
 
   .site-list__item:first-of-type {
     border-right: 1px solid #ececec;
+    padding-right: 20px;
   }
 
   .site-list__item:nth-of-type(even) {
