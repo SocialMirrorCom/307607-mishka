@@ -10,25 +10,20 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__left">
-          <div class="page-header__logo">
-          <a href="" class="page-header__image">
+        <div class="page-header__logo">
+          <a href="">
             <img src="img/logo-mobile.svg" width="89" height="37" alt="Интернет-магазин товаров для дома Мишка">
           </a>
         </div>
-          <button class="page-header__toggle page-header__toggle--active" type="button" aria-label="Открыть меню"></button>
-          <nav class="page-header__nav main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-                <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-                <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="catalog.html">Новые поступления</a></li>
-                <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="form.html">Распродажа</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <div class="page-header__right">
+        <nav class="page-header__main-nav main-nav main-nav--сlosed">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
+              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="catalog.html">Новые поступления</a></li>
+              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="form.html">Распродажа</a></li>
+            </ul>
           <form class ="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
             <input class="main-nav__search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
           </form>
@@ -37,7 +32,9 @@
               <a href="" class="user-list__cart">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
+          </div>
+        </nav>
+        <p class="page-header__delivery">Бесплатная доставка по России</p>
       </div>
     </header>
     <main class="page-main">
@@ -50,34 +47,42 @@
         <h2 class="visually-hidden">Полулярные товары Интернет магазина Мишка</h2>
         <div class="popular-items__wrapper">
           <div class="popular-item">
-            <h3 class="popular-item__title">
-              <a href="#">Вязаные корзинки</a>
-            </h3>
-            <span class="popular-item__marker">Товар недели</span>
-            <p class="popular-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <div class="popular-item__parameters">
-              <table class="popular-item__parameters-list">
-                <tr>
-                  <td class="popular-item__parameter-value">Цвет:</td>
-                  <td class="popular-item__parameter-field">"Тиффани"/серый</td>
-                </tr>
-                <tr>
-                  <td class="popular-item__parameter-value">Диаметр:</td>
-                  <td class="popular-item__parameter-field">25 см</td>
-                </tr>
-                <tr>
-                  <td class="popular-item__parameter-value">Высота:</td>
-                  <td class="popular-item__parameter-field">15 см</td>
-                </tr>
-              </table>
+            <div class="popular-item__top">
+              <h3 class="popular-item__title">
+                <a href="#">Вязаные корзинки</a>
+              </h3>
+              <span class="popular-item__marker">Товар недели</span>
+              </div>
+              <div class="popular-item__middle">
+              <div class="popular-item__information">
+              <p class="popular-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+              <div class="popular-item__parameters">
+                <table class="popular-item__parameters-list">
+                  <tr>
+                    <td class="popular-item__parameter-value">Цвет:</td>
+                    <td class="popular-item__parameter-field">"Тиффани"/серый</td>
+                  </tr>
+                  <tr>
+                    <td class="popular-item__parameter-value">Диаметр:</td>
+                    <td class="popular-item__parameter-field">25 см</td>
+                  </tr>
+                  <tr>
+                    <td class="popular-item__parameter-value">Высота:</td>
+                    <td class="popular-item__parameter-field">15 см</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="popular-item__bottom">
+                <span class="popular-item__price">Цена: 990 руб.</span>
+                <a href="#" class="popular-item__buy button">Заказать</a>
+              </div>
             </div>
             <div class="popular-item__image">
               <a href="#">
                 <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
               </a>
             </div>
-            <span class="popular-item__price">Цена: 990 руб.</span>
-            <a href="#" class="popular-item__buy button">Заказать</a>
+          </div>
           </div>
         </div>
       </section>

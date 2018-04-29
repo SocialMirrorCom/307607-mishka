@@ -10,25 +10,20 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__left">
-          <div class="page-header__logo">
-          <a href="" class="page-header__image">
+        <div class="page-header__logo">
+          <a href="">
             <img src="img/logo-mobile.svg" width="89" height="37" alt="Интернет-магазин товаров для дома Мишка">
           </a>
         </div>
-          <button class="page-header__toggle page-header__toggle--active" type="button" aria-label="Открыть меню"></button>
-          <nav class="page-header__nav main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-                <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-                <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="catalog.html">Новые поступления</a></li>
-                <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="form.html">Распродажа</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <div class="page-header__right">
+        <nav class="page-header__main-nav main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
+              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="catalog.html">Новые поступления</a></li>
+              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="form.html">Распродажа</a></li>
+            </ul>
           <form class ="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
             <input class="main-nav__search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
           </form>
@@ -37,7 +32,8 @@
               <a href="" class="user-list__cart">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
+          </div>
+        </nav>
       </div>
     </header>
 
