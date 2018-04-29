@@ -13,6 +13,11 @@
   vertical-align: middle;
 }
 
+.catalog-item__info h3 {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-item__title {
   display: block;
   font-weight: bold;
@@ -49,7 +54,7 @@
   display: flex;
   align-items: center;
 
-  min-height: 74px;
+  height: 72px;
   width: 204px;
   margin-left: 28px;
   margin-top: auto;
@@ -80,7 +85,7 @@
 
   .catalog-item__description {
     font-size: 15px;
-    margin-bottom: 180px;
+    margin-bottom: 20px;
   }
 
   .catalog-item__bottom {
@@ -92,8 +97,8 @@
   .catalog-item {
     flex-direction: column;
     width: 315px;
-    min-height: 659px;
-    margin-right: 52px;
+    height: 658px;
+    margin-right: 48px;
   }
 
   .catalog-item:nth-of-type(3n) {
@@ -101,11 +106,11 @@
   }
 
   .catalog-item__title {
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;*/
   }
 
   .catalog-item__image-box {
-    width: 315px;
+    width: 100%;
     height: 462px;
   }
 
@@ -114,10 +119,11 @@
   }
 
   .catalog-item__description {
-    margin-bottom: 45px;
+    /*margin-bottom: 45px;*/
   }
 
   .catalog-item__bottom {
     width: 256px;
+    height: 72px;
   }
 }
