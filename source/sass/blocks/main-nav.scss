@@ -104,7 +104,7 @@
   .main-nav__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 348px;
+    width: 668px;
   }
 
   .main-nav__toggle {
@@ -116,6 +116,8 @@
     border-right: 1px solid #ececec;
     width: 43px;
     height: 40px;
+
+    margin-left: 320px;
   }
 
   .main-nav__search {
