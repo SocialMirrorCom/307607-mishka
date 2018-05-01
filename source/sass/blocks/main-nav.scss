@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-
 }
 
 .main-nav__list,
@@ -34,20 +33,17 @@
 }
 
 .main-nav--сlosed .main-nav__toggle::before {
-  content: "";
-
   position: absolute;
+  content: "";
   top: 0px;
   right: 0px;
-
   width: 20px;
   height: 2px;
-
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
 
-.main-nav--opened .main-nav__toggle  {
+.main-nav--opened .main-nav__toggle {
   right: 30px;
 
   width: 21px;
@@ -66,16 +62,16 @@
   height: 2px;
 
   background-color: #000000;
-  }
+}
 
 .main-nav--opened .main-nav__toggle::before {
   transform: rotate(45deg);
   box-shadow: none;
-  }
+}
 
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
-  }
+}
 
 .main-nav__form {
   display: flex;
@@ -138,5 +134,4 @@
   .main-nav__form {
     margin-left: auto;
   }
-
 }
