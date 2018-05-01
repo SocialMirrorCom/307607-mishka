@@ -35,8 +35,10 @@
 .main-nav--сlosed .main-nav__toggle::before {
   position: absolute;
   content: "";
-  top: 0px;
-  right: 0px;
+
+  top: 0;
+  right: 0;
+
   width: 20px;
   height: 2px;
   background-color: #000000;
