@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="" class="page-header__image">
-          <img src="img/logo-mobile.svg" width="89" height="37" alt="Интернет-магазин товаров для дома Мишка">
-        </a>
-      </div>
-      <button class="page-header__toggle page-header__toggle--active" type="button" aria-label="Открыть меню"></button>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" width="89" height="37" alt="Интернет-магазин товаров для дома Мишка">
+          </a>
+        </div>
+        <nav class="page-header__main-nav main-nav main-nav--сlosed">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
+              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="catalog.html">Новые поступления</a></li>
+              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="form.html">Распродажа</a></li>
+            </ul>
           <form class ="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
             <input class="main-nav__search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
           </form>
@@ -27,27 +32,36 @@
               <a href="" class="user-list__cart">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
-      </nav>
+          </div>
+        </nav>
+        <p class="page-header__delivery">Бесплатная доставка по России</p>
+      </div>
     </header>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--instagram" aria-label="Мы в Инстаграме"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--facebook" aria-label="Мы в Фейсбуке"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--twitter" aria-label="Мы в Твиттере"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="В HTML Academy"></a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a href="index.html" class="page-footer__image">
+            <img src="img/logo-mobile.svg" width="89" height="37" alt="Интернет-магазин товаров для дома Мишка">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--instagram" aria-label="Мы в Инстаграме"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook" aria-label="Мы в Фейсбуке"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter" aria-label="Мы в Твиттере"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="В HTML Academy"></a>
+        </div>
       </div>
     </footer>
   </body>

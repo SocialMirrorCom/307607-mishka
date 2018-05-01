@@ -39,3 +39,36 @@
   padding: 45px 0;
   width: 260px;
 }
+
+@media (min-width: 768px) {
+  .advantages {
+    align-items: stretch;
+    width: 668px;
+    height: 650px;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+
+    width: 350px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item:nth-of-type(odd) {
+    margin-right: 75px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    width: 901px;
+    margin-left: 147px;
+  }
+}

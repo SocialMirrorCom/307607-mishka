@@ -1,8 +1,6 @@
 .catalog {
   display: flex;
   flex-direction: column;
-
-  min-width: 320px;
 }
 
 .catalog__title {
@@ -21,4 +19,16 @@
   min-height: 177px;
   width: 100%;
   background-color: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .catalog__title {
+    height: 227px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .catalog__title {
+    height: 255px;
+  }
 }

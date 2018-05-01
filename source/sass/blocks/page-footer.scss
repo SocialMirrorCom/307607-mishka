@@ -1,8 +1,40 @@
 .page-footer {
+  width: 100%;
+  min-height: 160px;
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  min-height: 160px;
-  background-color: #f1f1f1;
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 142px;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 1048px;
+  }
 }
