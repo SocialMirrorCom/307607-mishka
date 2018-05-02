@@ -49,6 +49,7 @@
   }
 
   .site-list__item {
+    padding-top: 17px;
     padding-left: 0;
     border: none;
   }
@@ -72,11 +73,15 @@
 
   .site-list__item:first-of-type {
     border-right: 1px solid #ececec;
-    padding-right: 20px;
+    padding-right: 25px;
   }
 
-  .site-list__item:nth-of-type(even) {
-    padding-left: 35px;
+  .site-list__item:nth-of-type(2) {
+    padding-left: 34px;
+  }
+
+  .site-list__item:nth-of-type(4) {
+    padding-left: 30px;
   }
 
   .site-list__item--desktop {
@@ -89,6 +94,8 @@
     font-size: 15px;
     line-height: 24px;
   }
+
+
 
   .site-list {
     flex-wrap: wrap;

@@ -40,7 +40,9 @@
 
 .page-main__nav-item {
   display: flex;
+  justify-content: center;
   min-height: 103px;
+  cursor: pointer;
 }
 
 .page-main__nav-list li:first-child {
@@ -52,13 +54,66 @@
 }
 
 .page-main__nav-link {
+  position: relative;
+  display: block;
   font-weight: bold;
   font-size: 19px;
   color: #ffffff;
-  width: 125px;
-  margin-left: 29px;
-  margin-right: 180px;
-  margin-top: 25px;
+  width: 150px;
+  padding-left: 29px;
+  padding-right: 180px;
+  padding-top: 25px;
+}
+
+.page-main__icon-interior {
+  position: absolute;
+  content: "";
+
+  top: 23px;
+  right: 36px;
+
+  width: 41px;
+  height: 63px;
+
+  path {
+    fill: #3bb09d;
+  }
+
+  &:hover {
+    path {
+    fill: #29a592;
+    }
+  }
+}
+
+.page-main__icon-toy {
+  position: absolute;
+  content: "";
+
+  top: 21px;
+  right: 27px;
+
+  width: 60px;
+  height: 60px;
+
+  path {
+    fill: #35a999;
+  }
+  &:hover {
+    path {
+    fill: #239f8e;
+    }
+  }
+}
+
+.page-main__nav-link:hover
+.page-main__nav-link:focus {
+  min-height: 83px;
+  transform: translateY(-5px);
+}
+
+.page-main__nav-link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -70,7 +125,7 @@
     font-size: 43px;
     line-height: 50px;
 
-    padding-top: 155px;
+    padding-top: 152px;
     height: 626px;
     background-size: cover;
   }
@@ -93,6 +148,7 @@
   .page-main__title {
     font-size: 53px;
     line-height: 57px;
+    padding-left: 40px;
   }
 
   .page-main__nav-list {
