@@ -106,7 +106,7 @@
   }
 }
 
-.page-main__nav-link:hover
+.page-main__nav-link:hover,
 .page-main__nav-link:focus {
   min-height: 83px;
   transform: translateY(-5px);
@@ -126,7 +126,7 @@
     line-height: 50px;
 
     padding-top: 152px;
-    height: 626px;
+    height: 625px;
     background-size: cover;
   }
 
@@ -141,6 +141,23 @@
   .page-main__nav-link {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 146px;
+    padding-top: 29px;
+    padding-left: 37px;
+  }
+
+  .page-main__nav-item:hover,
+  .page-main__nav-item:focus {
+   min-height: 125px;
+  }
+
+  .page-main__icon-interior {
+    top: 30px;
+  }
+
+  .page-main__icon-toy {
+    top: 31px;
+    right: 32px;
   }
 }
 
@@ -156,6 +173,17 @@
   }
 
   .page-main__nav-link {
-    margin-right: 370px;
+    padding-top: 28px;
+    padding-left: 40px;
+    padding-right: 335px;
+  }
+
+  .page-main__icon-interior {
+    top: 30px;
+  }
+
+  .page-main__icon-toy {
+    top: 30px;
+    right: 35px;
   }
 }
