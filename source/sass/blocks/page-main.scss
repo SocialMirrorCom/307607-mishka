@@ -81,7 +81,7 @@
 
   &:hover {
     path {
-    fill: #29a592;
+      fill: #29a592;
     }
   }
 }
@@ -99,9 +99,10 @@
   path {
     fill: #35a999;
   }
+
   &:hover {
     path {
-    fill: #239f8e;
+      fill: #239f8e;
     }
   }
 }
@@ -148,7 +149,7 @@
 
   .page-main__nav-item:hover,
   .page-main__nav-item:focus {
-   min-height: 125px;
+    min-height: 125px;
   }
 
   .page-main__icon-interior {

@@ -129,6 +129,7 @@
 @media (max-width: 767px) {
   .main-nav--closed .site-list__item {
     display: none;
+
     &--opened {
       display: block;
     }
@@ -136,6 +137,7 @@
 
   .main-nav--closed .main-nav__form {
     display: none;
+
     &--opened {
       display: block;
     }
@@ -143,6 +145,7 @@
 
   .main-nav--closed .main-nav__search {
     display: none;
+
     &--opened {
       display: block;
     }
@@ -150,6 +153,7 @@
 
   .main-nav--closed .user-list__item {
     display: none;
+
     &--opened {
       display: block;
     }
