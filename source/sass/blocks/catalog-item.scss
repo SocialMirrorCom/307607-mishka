@@ -125,6 +125,7 @@
     flex-direction: row;
     width: 668px;
     min-height: 335px;
+    margin-bottom: 50px;
   }
 
   .catalog-item__title {
@@ -142,6 +143,10 @@
     width: 333px;
   }
 
+  .catalog-item__title--busket {
+  margin-right: 64px;
+  }
+
   .catalog-item__description {
     font-size: 15px;
     margin-bottom: 20px;
@@ -149,6 +154,13 @@
 
   .catalog-item__bottom {
     width: 268px;
+    height: 75px;
+    margin-left: 35px;
+  }
+
+  .catalog-item__price {
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
@@ -175,6 +187,10 @@
 
   .catalog-item__info {
     width: 315px;
+  }
+
+  .catalog-item__title--busket {
+    margin-top: 40px;
   }
 
   .catalog-item__description {
