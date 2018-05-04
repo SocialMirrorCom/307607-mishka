@@ -63,7 +63,20 @@
   padding-left: 29px;
   padding-right: 180px;
   padding-top: 25px;
+
+  &:hover .page-main__icon-interior {
+    path {
+      fill: #29a592;
+    }
+  }
+
+  &:hover .page-main__icon-toy {
+    path {
+      fill: #239f8e;
+    }
+  }
 }
+
 
 .page-main__icon-interior {
   position: absolute;
@@ -77,12 +90,6 @@
 
   path {
     fill: #3bb09d;
-  }
-
-  &:hover {
-    path {
-      fill: #29a592;
-    }
   }
 }
 
@@ -98,12 +105,6 @@
 
   path {
     fill: #35a999;
-  }
-
-  &:hover {
-    path {
-      fill: #239f8e;
-    }
   }
 }
 
