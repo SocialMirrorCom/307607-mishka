@@ -23,12 +23,23 @@
 
 @media (min-width: 768px) {
   .catalog__title {
-    height: 227px;
+    align-items: flex-start;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    min-height: 128px;
+    margin-bottom: 81px;
+    padding-top: 94px;
   }
 }
 
 @media (min-width: 1200px) {
   .catalog__title {
     height: 255px;
+
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 31px;
   }
 }

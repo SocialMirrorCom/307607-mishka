@@ -51,6 +51,7 @@
 
     width: 120px;
     height: 50px;
+    z-index: 10;
   }
 
   .page-header__logo img {
@@ -64,7 +65,7 @@
     position: absolute;
     content: "";
 
-    top: 95px;
+    top: 90px;
     right: 0;
 
     width: 250px;

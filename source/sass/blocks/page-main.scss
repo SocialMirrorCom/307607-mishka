@@ -40,7 +40,9 @@
 
 .page-main__nav-item {
   display: flex;
+  justify-content: center;
   min-height: 103px;
+  cursor: pointer;
 }
 
 .page-main__nav-list li:first-child {
@@ -52,13 +54,67 @@
 }
 
 .page-main__nav-link {
+  position: relative;
+  display: block;
   font-weight: bold;
   font-size: 19px;
   color: #ffffff;
-  width: 125px;
-  margin-left: 29px;
-  margin-right: 180px;
-  margin-top: 25px;
+  width: 150px;
+  padding-left: 29px;
+  padding-right: 180px;
+  padding-top: 25px;
+
+  &:hover .page-main__icon-interior {
+    path {
+      fill: #29a592;
+    }
+  }
+
+  &:hover .page-main__icon-toy {
+    path {
+      fill: #239f8e;
+    }
+  }
+}
+
+.page-main__icon-interior {
+  position: absolute;
+  content: "";
+
+  top: 23px;
+  right: 36px;
+
+  width: 41px;
+  height: 63px;
+
+  path {
+    fill: #3bb09d;
+  }
+}
+
+.page-main__icon-toy {
+  position: absolute;
+  content: "";
+
+  top: 21px;
+  right: 27px;
+
+  width: 60px;
+  height: 60px;
+
+  path {
+    fill: #35a999;
+  }
+}
+
+.page-main__nav-link:hover,
+.page-main__nav-link:focus {
+  min-height: 83px;
+  transform: translateY(-5px);
+}
+
+.page-main__nav-link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -70,8 +126,8 @@
     font-size: 43px;
     line-height: 50px;
 
-    padding-top: 155px;
-    height: 626px;
+    padding-top: 152px;
+    height: 625px;
     background-size: cover;
   }
 
@@ -86,6 +142,23 @@
   .page-main__nav-link {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 146px;
+    padding-top: 29px;
+    padding-left: 37px;
+  }
+
+  .page-main__nav-item:hover,
+  .page-main__nav-item:focus {
+    min-height: 125px;
+  }
+
+  .page-main__icon-interior {
+    top: 30px;
+  }
+
+  .page-main__icon-toy {
+    top: 31px;
+    right: 32px;
   }
 }
 
@@ -93,6 +166,7 @@
   .page-main__title {
     font-size: 53px;
     line-height: 57px;
+    padding-left: 40px;
   }
 
   .page-main__nav-list {
@@ -100,6 +174,17 @@
   }
 
   .page-main__nav-link {
-    margin-right: 370px;
+    padding-top: 28px;
+    padding-left: 40px;
+    padding-right: 335px;
+  }
+
+  .page-main__icon-interior {
+    top: 30px;
+  }
+
+  .page-main__icon-toy {
+    top: 30px;
+    right: 35px;
   }
 }
