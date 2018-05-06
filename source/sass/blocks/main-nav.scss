@@ -18,15 +18,18 @@
 }
 
 .main-nav__toggle {
+  display: block;
   position: absolute;
   content: "";
   top: -50px;
   right: 30px;
   z-index: 2;
 
-  display: block;
   width: 21px;
   height: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
 
   cursor: pointer;
   border: none;
