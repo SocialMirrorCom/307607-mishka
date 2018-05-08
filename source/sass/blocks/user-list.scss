@@ -34,9 +34,7 @@
   width: 21px;
   height: 19px;
 
-  path {
-    fill: #d3d2d2;
-  }
+  fill: #d3d2d2;
 }
 
 .user-list__cart:hover,
@@ -45,9 +43,7 @@
 }
 
 .user-list__cart:hover .user-list__icon-cart {
-  path {
-    fill: #63d1bb;
-  }
+  fill: #63d1bb;
 }
 
 .user-list__cart:active {
@@ -55,9 +51,7 @@
 }
 
 .user-list__cart:active .user-list__icon-cart {
-  path {
-    fill: #d0f1ea;
-  }
+  fill: #d0f1ea;
 }
 
 @media (min-width: 768px) {

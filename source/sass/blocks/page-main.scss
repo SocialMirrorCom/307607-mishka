@@ -79,15 +79,11 @@
   padding-top: 25px;
 
   &:hover .page-main__icon-interior {
-    path {
-      fill: #29a592;
-    }
+    fill: #29a592;
   }
 
   &:hover .page-main__icon-toy {
-    path {
-      fill: #239f8e;
-    }
+    fill: #239f8e;
   }
 }
 
@@ -101,9 +97,7 @@
   width: 41px;
   height: 63px;
 
-  path {
-    fill: #3bb09d;
-  }
+  fill: #3bb09d;
 }
 
 .page-main__icon-toy {
@@ -116,15 +110,13 @@
   width: 60px;
   height: 60px;
 
-  path {
-    fill: #35a999;
-  }
+  fill: #35a999;
 }
 
-.page-main__nav-link:hover,
+/*.page-main__nav-link:hover,
 .page-main__nav-link:focus {
   transform: translateY(-5px);
-}
+}*/
 
 .page-main__nav-link:active {
   opacity: 0.3;

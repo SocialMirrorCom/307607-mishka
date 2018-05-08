@@ -54,20 +54,14 @@
   width: 27px;
   height: 35px;
 
-  path {
-    fill: #63d1bb;
-  }
+  fill: #63d1bb;
 
   &:hover {
-    path {
-      fill: #46c1ae;
-    }
+    fill: #46c1ae;
   }
 
   &:active {
-    path {
-      fill: #bde3dd;
-    }
+    fill: #bde3dd;
   }
 }
 
