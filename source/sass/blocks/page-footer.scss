@@ -16,11 +16,11 @@
 
 .page-footer__image {
   &:hover {
-    opacity: 0.6;
+    fill: #63d1bb;
   }
 
   &:active {
-    opacity: 0.3;
+    fill: #d0f1ea;
   }
 }
 

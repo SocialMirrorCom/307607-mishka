@@ -46,8 +46,17 @@
 .page-main__nav-item {
   display: flex;
   justify-content: center;
+
   min-height: 103px;
+  margin-top: 5px;
+
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    margin-top: 0;
+    padding-bottom: 5px;
+  }
 }
 
 .page-main__nav-list li:first-child {
@@ -70,15 +79,11 @@
   padding-top: 25px;
 
   &:hover .page-main__icon-interior {
-    path {
-      fill: #29a592;
-    }
+    fill: #29a592;
   }
 
   &:hover .page-main__icon-toy {
-    path {
-      fill: #239f8e;
-    }
+    fill: #239f8e;
   }
 }
 
@@ -92,9 +97,7 @@
   width: 41px;
   height: 63px;
 
-  path {
-    fill: #3bb09d;
-  }
+  fill: #3bb09d;
 }
 
 .page-main__icon-toy {
@@ -107,16 +110,13 @@
   width: 60px;
   height: 60px;
 
-  path {
-    fill: #35a999;
-  }
+  fill: #35a999;
 }
 
-.page-main__nav-link:hover,
+/*.page-main__nav-link:hover,
 .page-main__nav-link:focus {
-  padding-bottom: 5px;
   transform: translateY(-5px);
-}
+}*/
 
 .page-main__nav-link:active {
   opacity: 0.3;
@@ -155,11 +155,6 @@
     padding-right: 146px;
     padding-top: 29px;
     padding-left: 37px;
-  }
-
-  .page-main__nav-item:hover,
-  .page-main__nav-item:focus {
-    min-height: 125px;
   }
 
   .page-main__icon-interior {
