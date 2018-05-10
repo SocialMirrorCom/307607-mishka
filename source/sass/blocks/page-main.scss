@@ -48,15 +48,8 @@
   justify-content: center;
 
   min-height: 103px;
-  margin-top: 5px;
 
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    margin-top: 0;
-    padding-bottom: 5px;
-  }
 }
 
 .page-main__nav-list li:first-child {
@@ -113,10 +106,10 @@
   fill: #35a999;
 }
 
-/*.page-main__nav-link:hover,
+.page-main__nav-link:hover,
 .page-main__nav-link:focus {
   transform: translateY(-5px);
-}*/
+}
 
 .page-main__nav-link:active {
   opacity: 0.3;
@@ -132,6 +125,7 @@
     line-height: 50px;
 
     padding-top: 152px;
+    margin-bottom: -5px;
     height: 625px;
     background-image: url("../img/hero-tablet@1x.jpg");
 
@@ -147,6 +141,16 @@
     width: 668px;
     height: 120px;
     margin: 0 auto;
+  }
+
+  .page-main__nav-item {
+    margin-top: 5px;
+
+    &:hover,
+    &:focus {
+      margin-top: 0;
+      padding-bottom: 5px;
+    }
   }
 
   .page-main__nav-link {
