@@ -120,18 +120,18 @@
   width: 280px;
   padding-left: 56px;
 
-  background-image: url("../img/icon-search-grey.svg");
+  background-image: url("../img/grey-icon-search.svg");
   background-repeat: no-repeat;
   background-position: 10px 2px;
 
   border: none;
 
   &:hover {
-    background-image: url("../img/icon-search-green.svg");
+    background-image: url("../img/green-icon-search.svg");
   }
 
   &:focus {
-    background-image: url("../img/icon-search-lightgreen.svg");
+    background-image: url("../img/lightgreen-icon-search.svg");
   }
 }
 
