@@ -57,6 +57,19 @@ gulp.task("style", function () {
   .pipe(server.stream());
 });
 
+/* Задание запускает делает префиксы, миминизирует и снова сохраняет в папку build файл normalize*/
+
+gulp.task("normalize", function () {
+  gulp.src("source/css/normalize.css")
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(gulp.dest("build/css"))
+  .pipe(minify())
+  .pipe(rename("normalize.min.css"))
+  .pipe(gulp.dest("build/css"));
+});
+
 /* Задание делает спрайт из файлов, на которые мы указываем, в инлайновом виде, то есть можно вносить изменения через CSS
 Команда gulp sprite*/
 
@@ -103,6 +116,7 @@ gulp.task("build", function (done) {
   "clean",
   "copy",
   "style",
+  "normalize",
   "sprite",
   "html",
   "minjs",
