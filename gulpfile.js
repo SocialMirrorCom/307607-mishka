@@ -15,6 +15,8 @@ var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var del = require("del");
 var run = require("run-sequence");
+var minifyhtml = require("gulp-htmlmin");
+var minifyjs = require("gulp-uglify");
 
 /* Задание для очистки папки build
 Команда gulp clean*/
@@ -67,7 +69,7 @@ gulp.task("sprite", function () {
   .pipe(gulp.dest("build/img"));
 });
 
-/* Запускаем posthtml c плагином include, чтобы автоматически вставить спрайт в html файлы
+/* Запускаем posthtml c плагином include, чтобы автоматически вставить спрайт в html файл ,минифицируем html
 Команда gulp html*/
 
 gulp.task("html", function () {
@@ -75,7 +77,26 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(minifyhtml({
+    minifyJS: true,
+    minifyURLs: true,
+    collapseWhitespace: true,
+    removeComments: true,
+    sortAttributes: true,
+    sortClassName: true
+  }))
   .pipe(gulp.dest("build"))
+  .pipe(server.stream());
+});
+
+/* Запускаем минификацию js*/
+
+gulp.task("minjs", function () {
+  gulp.src("source/js/script.js")
+  .pipe(minifyjs())
+  .pipe(gulp.dest("build/js"))
+  .pipe(rename("script.min.js"))
+  .pipe(gulp.dest("build/js"))
   .pipe(server.stream());
 });
 
@@ -89,6 +110,7 @@ gulp.task("build", function (done) {
   "style",
   "sprite",
   "html",
+  "minjs",
   done
   );
 });
@@ -108,5 +130,6 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/*.js", ["js"]);
   /*gulp.watch("source/*.html").on("change", server.reload);*/
 });
