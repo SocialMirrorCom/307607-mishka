@@ -1,0 +1,38 @@
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reviews__text {
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reviews__insta-account {
+  font-size: 17px;
+}
+
+@media (min-width: 768px) {
+  .reviews__title {
+  font-size: 43px;
+  line-height: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews__title {
+  font-size: 53px;
+  line-height: 57px;
+  }
+}

@@ -1,0 +1,29 @@
+.video__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.video__text {
+  font-size: 13px;
+}
+
+.video__order {
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .video__title {
+    font-size: 20px;
+  }
+
+  .video__text {
+  font-size: 15px;
+  line-height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
