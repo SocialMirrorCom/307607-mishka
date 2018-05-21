@@ -127,7 +127,7 @@
         <div class="reviews__wrapper">
           <div class="reviews__top">
             <h2 class="reviews__title">Отзывы</h2>
-            <a href="#" class="reviews__button button">Написать</a>
+            <a href="#" class="reviews__write button">Написать</a>
           </div>
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <div class="reviews__bottom">
@@ -136,10 +136,34 @@
               <p class="reviews__insta-account">@misssssiskras</p>
             </div>
             <div class="reviews__toggles">
-              <button class="reviews__toggle-left" type="button" aria-label="Листать влево">></button>
-              <button class="reviews__toggle-right" type="button" aria-label="Листать вправо"></button>
+              <button class="reviews__toggle-prev" type="button" aria-label="Предыдущий отзыв">></button>
+              <button class="reviews__toggle-next" type="button" aria-label="Следующий отзыв"></button>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__all">
+          <div class="contacts__email">
+            <p>e-mail:</p>
+            <a class="contacts__email-link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__address">
+            <p>адрес:</p>
+            <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          </div>
+          <div class="contacts__map">
+            <picture>
+              <!--<source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">-->
+              <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg 1x" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            </picture>
+          </div>
+          <a href="#" class="contacts__write button">Напишите нам</a>
         </div>
       </section>
     </main>
