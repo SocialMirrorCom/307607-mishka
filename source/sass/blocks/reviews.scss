@@ -1,25 +1,90 @@
+.reviews__wrapper {
+  position: relative;
+  width: 260px;
+}
+
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+}
+
+.reviews__write {
+  position: absolute;
+  content: "";
+
+  bottom: 0;
+  left: 0;
 }
 
 .reviews__text {
   line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__author-name {
   font-size: 17px;
   font-weight: bold;
   color: #000000;
+
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__insta-account {
   font-size: 17px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__toggles {
+  display: flex;
+}
+
+.reviews__toggle {
+  margin-bottom: 91px;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #ececec;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.reviews__toggle:hover,
+.reviews__toggle:focus {
+  opacity: 0.6;
+}
+
+.reviews__toggle:active {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
+  .reviews {
+    min-height: 457px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .reviews__wrapper{
+    width: 669px;
+  }
+
+  .reviews__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
   .reviews__title {
   font-size: 43px;
   line-height: 50px;
@@ -28,9 +93,36 @@
   .reviews__text {
     font-size: 17px;
   }
+
+  .reviews__write {
+    position: static;
+
+    width: 175px;
+  }
+
+  .reviews__toggle {
+    margin-bottom: 0;
+    width: 90px;
+    border: none;
+  }
+
+  .reviews__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 @media (min-width: 1200px) {
+  .reviews {
+    width: 1049px;
+  }
+
+  .reviews__wrapper{
+    margin-left: 175px;
+    width: 875px;
+  }
+
   .reviews__title {
   font-size: 53px;
   line-height: 57px;
