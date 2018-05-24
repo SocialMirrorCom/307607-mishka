@@ -127,13 +127,14 @@
     line-height: 50px;
 
     padding-top: 152px;
-    margin-bottom: -120px;
+    margin-bottom: -125px;
     height: 745px;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center -5px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 1190px auto;
+      background-size: 1160px auto;
     }
   }
 

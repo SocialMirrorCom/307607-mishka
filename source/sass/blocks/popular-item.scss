@@ -112,7 +112,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    height: 151px;
+    height: 156px;
   }
 
   .popular-item__title {
@@ -120,7 +120,7 @@
     line-height: 50px;
 
     width: 430px;
-    margin-top: 44px;
+    margin-top: 49px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -131,7 +131,7 @@
 
     width: 80px;
     padding-right: 22px;
-    margin-top: 55px;
+    margin-top: 60px;
   }
 
   .popular-item__middle {
@@ -243,7 +243,7 @@
   }
 
   .popular-item__description {
-    padding-top: 160px;
+    padding-top: 165px;
     margin-bottom: 47px;
   }
 
@@ -253,6 +253,10 @@
   }
 
   .popular-item__bottom {
-    height: 118px;
+    height: 109px;
+  }
+
+  .popular-item__price {
+    margin-bottom: 35px;
   }
 }
