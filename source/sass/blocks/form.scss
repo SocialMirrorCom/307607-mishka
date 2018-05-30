@@ -1,14 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 179px;
   background-color: #f1f1f1;
 }
 
 .form__text {
   font-size: 13px;
+
+
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  width: 260px;
 }
 
 .form__fieldset {
@@ -17,18 +38,38 @@
   border: none;
 }
 
-.form__container ul {
+.form__container {
+  width: 260px;
+}
+
+/*.form__container ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .form__container legend {
+  position: relative;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
   color: #63d1bb;
   text-transform: uppercase;
+
+  margin-bottom: 35px;
+}
+
+.form__container legend::before {
+  position: absolute;
+  content: "";
+
+  top: 8px;
+  left: 62px;
+
+  width: 198px;
+  height: 1px;
+
+  background-color: #62d1ba;
 }
 
 .form__container label {
@@ -36,6 +77,48 @@
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+}
+
+.color label {
+  position: relative;
+  padding-left: 63px;
+}
+
+.type__option {
+  margin-bottom: 23px;
+}
+
+.type__input-radio + label::before {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  left: 0;
+
+  width: 38px;
+  height: 38px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.type__input-radio:checked + label::after {
+  position: absolute;
+  content: "";
+
+  top: 12px;
+  left: 12px;
+
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid #62d1ba;
+  border-radius: 50%;
+  background-color: #62d1ba;
+
+  cursor: pointer;
 }
 
 .name__input {
@@ -58,15 +141,21 @@
 
 .add-info__textarea {
   border: 2px solid #000000;
-}
+}*/
 
 .form__star {
   font-size: 14px;
   line-height: 16px;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .form-button {
   line-height: 16px;
+
+  margin-bottom: 55px;
 }
 
 @media (min-width: 768px) {

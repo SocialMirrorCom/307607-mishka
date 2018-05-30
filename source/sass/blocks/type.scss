@@ -1,0 +1,96 @@
+.type ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.type legend {
+  position: relative;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  margin-bottom: 35px;
+}
+
+.type legend::before {
+  position: absolute;
+  content: "";
+
+  top: 8px;
+  left: 62px;
+
+  width: 198px;
+  height: 1px;
+
+  background-color: #62d1ba;
+}
+
+.type label {
+  position: relative;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+
+  padding-left: 63px;
+}
+
+.type__option {
+  margin-bottom: 23px;
+}
+
+.type__input-radio + label::before {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  left: 0;
+
+  width: 38px;
+  height: 38px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.type__input-radio:hover + label::before,
+.type__input-radio:focus + label::before {
+  border: 2px solid #62d1ba;
+}
+
+.type__input-radio:active + label::before {
+  border: 2px solid #c7c7c7;
+}
+
+.type__input-radio:checked + label::after {
+  position: absolute;
+  content: "";
+
+  top: 12px;
+  left: 12px;
+
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid #62d1ba;
+  border-radius: 50%;
+  background-color: #62d1ba;
+
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .type label {
+  font-size: 19px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}

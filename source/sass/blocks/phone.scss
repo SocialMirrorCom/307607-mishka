@@ -1,0 +1,67 @@
+.phone {
+  position: relative;
+}
+
+.phone legend {
+  position: relative;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.phone legend::before {
+  position: absolute;
+  content: "";
+
+  top: 8px;
+  left: 62px;
+
+  width: 198px;
+  height: 1px;
+
+  background-color: #62d1ba;
+}
+
+.phone__input {
+  width: 260px;
+  height: 52px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 22px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+
+.phone__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #d6d6d6;
+}
+
+.phone__icon-phone {
+  position: absolute;
+  content: "";
+
+  width: 25px;
+  height: 25px;
+
+  top: 30px;
+  right: 5px;
+
+  fill: #d6d6d6;
+}
+
+.phone__input:hover + .phone__icon-phone,
+.phone__input:focus + .phone__icon-phone,
+.phone__input:active + .phone__icon-phone {
+  fill: #62d1ba;
+}
+

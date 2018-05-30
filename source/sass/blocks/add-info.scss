@@ -1,0 +1,49 @@
+.add-info legend {
+  position: relative;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.add-info legend::before {
+  position: absolute;
+  content: "";
+
+  top: 8px;
+  left: 62px;
+
+  width: 198px;
+  height: 1px;
+
+  background-color: #62d1ba;
+}
+
+.add-info__textarea {
+  width: 240px;
+  height: 127px;
+  border: 2px solid #000000;
+  margin-bottom: 17px;
+  padding-top: 15px;
+  padding-left: 16px;
+
+  resize: none; /*убираем уголок ресайза*/
+  overflow: auto; /*убираем полосу прокрутки в IE*/
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border: 2px solid #62d1ba;
+  }
+}
+
+.add-info__textarea::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #d6d6d6;
+}

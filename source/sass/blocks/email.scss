@@ -1,0 +1,65 @@
+.email {
+  position: relative;
+}
+
+  .email legend {
+  position: relative;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.email legend::before {
+  position: absolute;
+  content: "";
+
+  top: 8px;
+  left: 62px;
+
+  width: 198px;
+  height: 1px;
+
+  background-color: #62d1ba;
+}
+
+.email__input {
+  width: 260px;
+  height: 52px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 22px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.email__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #d6d6d6;
+}
+
+.email__icon-mail {
+  position: absolute;
+  content: "";
+
+  width: 25px;
+  height: 25px;
+
+  top: 30px;
+  right: 5px;
+
+  fill: #d6d6d6;
+}
+
+.email__input:hover + .email__icon-mail,
+.email__input:focus + .email__icon-mail,
+.email__input:active + .email__icon-mail {
+  fill: #62d1ba;
+}
