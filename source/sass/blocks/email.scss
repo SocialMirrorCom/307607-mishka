@@ -66,26 +66,21 @@
 
 @media (min-width: 768px) {
   .email {
-    width: 768px;
-    background-color: #f1f1f1;
     padding-top: 15px;
     padding-bottom: 30px;
-    margin-bottom: 50px;
   }
 
   .email__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
 
-
-    width: 768px;
+    width: 668px;
   }
 
   .email__legend {
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 105px;
   }
 
   .email__legend::before {
@@ -103,6 +98,24 @@
 
   .email__icon-mail {
     top: 35px;
-    right: 75px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .email__wrapper {
+    width: 842px;
+    justify-content: flex-start;
+  }
+
+  .email__legend {
+    margin-right: 55px;
+  }
+
+  .email__input {
+    width: 700px;
+  }
+
+  .email__icon-mail {
+    right: 35px;
   }
 }

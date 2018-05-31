@@ -66,25 +66,18 @@
 }
 
 @media (min-width: 768px) {
-  .phone {
-    width: 768px;
-    background-color: #f1f1f1;
-    padding-top: 50px;
-  }
-
   .phone__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
 
-
-    width: 768px;
+    width: 668px;
+    margin-top: 50px;
   }
 
   .phone__legend {
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 130px;
+    margin-top: 20px;
   }
 
   .phone__legend::before {
@@ -102,10 +95,24 @@
 
   .phone__icon-phone {
     top: 65px;
-    right: 75px;
   }
 }
 
+@media (min-width: 1200px) {
+  .phone__wrapper {
+    width: 842px;
+    justify-content: flex-start;
+  }
 
+  .phone__legend {
+    margin-right: 80px;
+  }
 
+  .phone__input {
+    width: 700px;
+  }
 
+  .phone__icon-phone {
+    right: 35px;
+  }
+}

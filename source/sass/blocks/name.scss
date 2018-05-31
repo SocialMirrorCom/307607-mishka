@@ -99,3 +99,20 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .name__wrapper {
+    width: 842px;
+  }
+
+  .name__list {
+    width: 730px;
+  }
+
+  .name__input {
+    width: 530px;
+  }
+
+  .name__input--name {
+    width: 583px;
+  }
+}

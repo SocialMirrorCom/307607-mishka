@@ -50,6 +50,7 @@
 
 @media (min-width: 768px) {
   .add-info {
+    margin-top: 50px;
     margin-bottom: 53px;
   }
 
@@ -70,5 +71,14 @@
     width: 482px;
     margin-bottom: 0;
   }
+}
 
+@media (min-width: 1200px) {
+  .add-info__wrapper {
+    width: 842px;
+  }
+
+  .add-info__textarea {
+    width: 680px;
+  }
 }
