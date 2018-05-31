@@ -58,3 +58,44 @@
   color: #d6d6d6;
 }
 
+@media (min-width: 768px) {
+  .name__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 668px;
+  }
+
+  .name legend {
+    margin-top: 16px;
+  }
+
+  .name legend::before {
+    display: none;
+  }
+
+  .name__list {
+    width: 507px;
+  }
+
+  .name__input {
+    width: 357px;
+    padding-left: 18px;
+  }
+
+  .name__input--name {
+    width: 410px;
+  }
+
+  .name__input::placeholder {
+  font-size: 19px;
+  }
+
+  .name label {
+    font-size: 19px;
+    margin-right: 25px;
+  }
+}
+

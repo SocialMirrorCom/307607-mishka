@@ -1,10 +1,10 @@
-.type ul {
+.type__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.type legend {
+.type__legend {
   position: relative;
   font-size: 17px;
   line-height: 16px;
@@ -15,7 +15,7 @@
   margin-bottom: 35px;
 }
 
-.type legend::before {
+.type__legend::before {
   position: absolute;
   content: "";
 
@@ -86,8 +86,50 @@
 }
 
 @media (min-width: 768px) {
+  .type {
+    width: 668px;
+  }
+
+  .type__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 668px;
+  }
+
+  .type__legend {
+    margin-top: 10px;
+  }
+
+  .type__list {
+    width: 507px;
+  }
+
+  .type__option {
+    margin-bottom: 55px;
+  }
+
   .type label {
-  font-size: 19px;
+    font-size: 19px;
+  }
+
+  .type__legend::before {
+    display: none;
+  }
+
+  .type__input-radio + label::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .type__input-radio:checked + label::after {
+    top: 15px;
+    left: 15px;
+
+    width: 19px;
+    height: 19px;
   }
 }
 

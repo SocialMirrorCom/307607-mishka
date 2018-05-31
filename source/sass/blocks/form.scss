@@ -24,7 +24,6 @@
 .form__text {
   font-size: 13px;
 
-
   margin: 0;
   padding: 0;
   margin-top: 27px;
@@ -152,7 +151,7 @@
   margin-bottom: 30px;
 }
 
-.form-button {
+.form__button {
   line-height: 16px;
 
   margin-bottom: 55px;
@@ -160,26 +159,74 @@
 
 @media (min-width: 768px) {
   .form__title {
-  font-size: 43px;
-  line-height: 50px;
+    position: relative;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    min-height: 222px;
+
+    z-index: 10;
+  }
+
+  .form__title::after {
+    position: absolute;
+    content: "";
+
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 12px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-color: transparent;
+
+    z-index: 20;
   }
 
   .form__text {
-  font-size: 17px;
-  line-height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+
+    width: 668px
   }
 
-  .form__container label {
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /*.form__container label {
   font-size: 19px;
   }
 
   .name__input input::placeholder {
   font-size: 19px;
+  }*/
+
+  .form__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 668px;
   }
 
   .form__star {
-  font-size: 17px;
-  line-height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    order: 1;
+  }
+
+  .form__button {
+    width: 226px
   }
 }
 

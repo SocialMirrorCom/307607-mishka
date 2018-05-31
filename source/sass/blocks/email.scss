@@ -63,3 +63,46 @@
 .email__input:active + .email__icon-mail {
   fill: #62d1ba;
 }
+
+@media (min-width: 768px) {
+  .email {
+    width: 768px;
+    background-color: #f1f1f1;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+
+  .email__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+
+    width: 768px;
+  }
+
+  .email__legend {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 105px;
+  }
+
+  .email__legend::before {
+    display: none;
+  }
+
+  .email__input {
+    width: 502px;
+    background-color: #f1f1f1;
+  }
+
+  .email__input::placeholder {
+    padding-left: 16px;
+  }
+
+  .email__icon-mail {
+    top: 35px;
+    right: 75px;
+  }
+}

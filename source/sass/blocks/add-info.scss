@@ -47,3 +47,28 @@
   line-height: 18px;
   color: #d6d6d6;
 }
+
+@media (min-width: 768px) {
+  .add-info {
+    margin-bottom: 53px;
+  }
+
+  .add-info__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 668px;
+  }
+
+  .add-info legend::before {
+    display: none;
+  }
+
+  .add-info__textarea {
+    width: 482px;
+    margin-bottom: 0;
+  }
+
+}

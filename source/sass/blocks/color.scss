@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-.color legend {
+.color__legend {
   position: relative;
   font-size: 17px;
   line-height: 16px;
@@ -15,7 +15,7 @@
   margin-bottom: 35px;
 }
 
-.color legend::before {
+.color__legend::before {
   position: absolute;
   content: "";
 
@@ -85,8 +85,55 @@
 }
 
 @media (min-width: 768px) {
+  .color {
+    width: 768px;
+    background-color: #f1f1f1;
+  }
+
+  .color__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    width: 768px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+
+  .color__legend {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 120px;
+  }
+
+  .color__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .color__option {
+    width: 256px;
+  }
+
+  .color__legend::before {
+    display: none;
+  }
+
   .color label {
-  font-size: 19px;
+    font-size: 19px;
+  }
+
+  .color__input-checkbox + label::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .color__input-checkbox:checked + label::after {
+    top: 13px;
+    left: 9px;
   }
 }
 
