@@ -63,13 +63,21 @@
     width: 668px;
   }
 
+  .add-info legend {
+    margin-top: 17px;
+  }
+
   .add-info legend::before {
     display: none;
   }
 
   .add-info__textarea {
-    width: 482px;
+    width: 478px;
     margin-bottom: 0;
+  }
+
+  .add-info__textarea::placeholder {
+    font-size: 19px;
   }
 }
 

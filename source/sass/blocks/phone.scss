@@ -70,6 +70,10 @@
 }
 
 @media (min-width: 768px) {
+  .phone {
+    margin-bottom: 0;
+  }
+
   .phone__wrapper {
     display: flex;
     flex-direction: row;
@@ -77,7 +81,7 @@
     align-items: flex-start;
 
     width: 668px;
-    margin-top: 50px;
+    margin-top: 47px;
   }
 
   .phone__legend {
@@ -89,16 +93,20 @@
   }
 
   .phone__input {
-    width: 502px;
+    height: 51px;
+    width: 500px;
+    margin-bottom: 7px;
     background-color: #f1f1f1;
   }
 
   .phone__input::placeholder {
-    padding-left: 16px;
+    font-size: 19px;
+    padding-left: 17px;
   }
 
   .phone__icon-phone {
-    top: 65px;
+    top: 61px;
+    right: 25px;
   }
 }
 

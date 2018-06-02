@@ -91,6 +91,7 @@
 @media (min-width: 768px) {
   .type {
     width: 668px;
+    margin-bottom: 13px;
   }
 
   .type__wrapper {
@@ -103,15 +104,16 @@
   }
 
   .type__legend {
-    margin-top: 10px;
+    margin-top: 4px;
   }
 
   .type__list {
-    width: 507px;
+    width: 500px;
   }
 
   .type__option {
-    margin-bottom: 55px;
+    margin-left: 80px;
+    margin-bottom: 52px;
   }
 
   .type label {
@@ -125,11 +127,13 @@
   .type__input-radio + label::before {
     width: 48px;
     height: 48px;
+    top: -11px;
+    left: -80px;
   }
 
   .type__input-radio:checked + label::after {
-    top: 15px;
-    left: 15px;
+    top: 4px;
+    left: -65px;
 
     width: 19px;
     height: 19px;
@@ -139,6 +143,7 @@
 @media (min-width: 1200px) {
   .type {
     width: 842px;
+    margin-bottom: 13px;
   }
 
   .type__wrapper {

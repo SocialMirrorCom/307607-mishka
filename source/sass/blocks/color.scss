@@ -104,12 +104,12 @@
     align-items: flex-start;
 
     width: 668px;
-    margin-top: 50px;
-    margin-bottom: 35px;
+    margin-top: 62px;
+    margin-bottom: 12px;
   }
 
   .color__legend {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .color__list {
@@ -119,11 +119,16 @@
     flex-wrap: wrap;
     align-items: flex-start;
 
-    width: 507px;
+    width: 501px;
   }
 
   .color__option {
-    width: 253px;
+    width: 200px;
+    margin-bottom: 52px;
+  }
+
+  .color__list li:nth-child(odd) {
+    margin-right: 62px;
   }
 
   .color__legend::before {
@@ -132,16 +137,21 @@
 
   .color label {
     font-size: 19px;
+    line-height: 0;
+    padding-left: 82px;
+
   }
 
   .color__input-checkbox + label::before {
-    width: 48px;
+    top: -10px;
+
+    width: 50px;
     height: 48px;
   }
 
   .color__input-checkbox:checked + label::after {
-    top: 13px;
-    left: 9px;
+    top: 6px;
+    left: 12px;
   }
 }
 

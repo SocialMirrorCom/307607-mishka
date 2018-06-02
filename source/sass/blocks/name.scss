@@ -63,6 +63,10 @@
 }
 
 @media (min-width: 768px) {
+  .name {
+    margin-top: 51px;
+    margin-bottom: 25px;
+  }
   .name__wrapper {
     display: flex;
     flex-direction: row;
@@ -81,16 +85,18 @@
   }
 
   .name__list {
-    width: 507px;
+    width: 500px;
   }
 
   .name__input {
     width: 357px;
-    padding-left: 18px;
+    height: 47px;
+    padding-left: 16px;
+    margin-bottom: 25px;
   }
 
   .name__input--name {
-    width: 410px;
+    width: 409px;
   }
 
   .name__input::placeholder {
@@ -99,7 +105,7 @@
 
   .name label {
     font-size: 19px;
-    margin-right: 25px;
+    margin-right: 21px;
   }
 }
 

@@ -71,6 +71,7 @@
   .email {
     padding-top: 15px;
     padding-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .email__wrapper {
@@ -83,7 +84,7 @@
   }
 
   .email__legend {
-    margin-top: 10px;
+    margin-top: 19px;
   }
 
   .email__legend::before {
@@ -91,16 +92,19 @@
   }
 
   .email__input {
-    width: 502px;
+    width: 500px;
     background-color: #f1f1f1;
   }
 
   .email__input::placeholder {
-    padding-left: 16px;
+    font-size: 19px;
+
+    padding-left: 17px;
   }
 
   .email__icon-mail {
-    top: 35px;
+    top: 28px;
+    right: 21px;
   }
 }
 
