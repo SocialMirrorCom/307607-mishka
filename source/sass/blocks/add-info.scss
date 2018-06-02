@@ -82,11 +82,20 @@
 }
 
 @media (min-width: 1200px) {
+  .add-info {
+    margin-bottom: 49px;
+  }
+
   .add-info__wrapper {
-    width: 842px;
+    justify-content: flex-start;
+    width: 923px;
+  }
+
+  .add-info legend {
+    margin-right: 73px;
   }
 
   .add-info__textarea {
-    width: 680px;
+    width: 678px;
   }
 }

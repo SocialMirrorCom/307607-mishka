@@ -126,7 +126,7 @@
   }
 
   .form__button {
-    width: 231px;
+    width: 230px;
     margin-bottom: 0;
   }
 }
@@ -136,8 +136,9 @@
     font-size: 53px;
     line-height: 57px;
 
-    min-height: 250px;
-    margin-bottom: 130px;
+    min-height: 251px;
+    margin-top: -12px;
+    margin-bottom: 59px;
   }
 
   .form__title::after {
@@ -147,11 +148,12 @@
 
   .form__text {
     width: 713px;
-    margin-left: 116px;
+    margin-top: 69px;
+    margin-left: 13px;
   }
 
   .form__bottom {
     width: 702px;
-    margin-left: 140px;
+    margin-left: 3px;
   }
 }

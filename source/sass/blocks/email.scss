@@ -110,11 +110,12 @@
 
 @media (min-width: 1200px) {
   .email__wrapper {
-    width: 842px;
+    width: 927px;
     justify-content: flex-start;
   }
 
   .email__legend {
+    margin-top: 21px;
     margin-right: 55px;
   }
 
@@ -123,6 +124,6 @@
   }
 
   .email__icon-mail {
-    right: 35px;
+    right: 117px;
   }
 }
