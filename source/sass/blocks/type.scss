@@ -1,7 +1,3 @@
-.type {
-  margin-bottom: 29px;
-}
-
 .type__list {
   margin: 0;
   padding: 0;
@@ -9,49 +5,45 @@
 }
 
 .type__legend {
-  position: relative;
+  @include headline;
+
   font-size: 17px;
   line-height: 16px;
-  font-weight: bold;
-  color: #63d1bb;
-  text-transform: uppercase;
 
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 }
 
-.type__legend::before {
-  position: absolute;
-  content: "";
-
-  top: 8px;
-  left: 62px;
-
-  width: 198px;
-  height: 1px;
-
-  background-color: #62d1ba;
+.type__legend span {
+  background-color: #ffffff;
 }
 
-.type label {
+.type__label {
+  display: block;
   position: relative;
 
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+
+  padding-left: 63px;
+  min-height: 36px;
 }
 
 .type__option {
-  margin-left: 63px;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
 }
 
-.type__input-radio + label::before {
+.type__option:last-child {
+  margin-bottom: 26px;
+}
+
+.type__input-radio + .type__label::before {
   position: absolute;
   content: "";
 
-  top: -6px;
-  left: -62px;
+  top: -9px;
+  left: 0;
 
   width: 36px;
   height: 36px;
@@ -62,21 +54,21 @@
   cursor: pointer;
 }
 
-.type__input-radio:hover + label::before,
-.type__input-radio:focus + label::before {
+.type__input-radio:hover + .type__label::before,
+.type__input-radio:focus + .type__label::before {
   border: 2px solid #62d1ba;
 }
 
-.type__input-radio:active + label::before {
+.type__input-radio:active + .type__label::before {
   border: 2px solid #c7c7c7;
 }
 
-.type__input-radio:checked + label::after {
+.type__input-radio:checked + .type__label::after {
   position: absolute;
   content: "";
 
-  top: 6px;
-  left: -50px;
+  top: 4px;
+  left: 12px;
 
   width: 14px;
   height: 14px;
@@ -91,7 +83,7 @@
 @media (min-width: 768px) {
   .type {
     width: 668px;
-    margin-bottom: 13px;
+    margin-bottom: 25px;
   }
 
   .type__wrapper {
@@ -104,7 +96,7 @@
   }
 
   .type__legend {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   .type__list {
@@ -113,26 +105,27 @@
 
   .type__option {
     margin-left: 80px;
-    margin-bottom: 52px;
+    margin-bottom: 40px;
   }
 
-  .type label {
+  .type__label {
     font-size: 19px;
+    padding-left: 0;
   }
 
   .type__legend::before {
     display: none;
   }
 
-  .type__input-radio + label::before {
+  .type__input-radio + .type__label::before {
     width: 48px;
     height: 48px;
-    top: -11px;
+    top: -15px;
     left: -80px;
   }
 
-  .type__input-radio:checked + label::after {
-    top: 4px;
+  .type__input-radio:checked + .type__label::after {
+    top: 0;
     left: -65px;
 
     width: 19px;
@@ -143,7 +136,7 @@
 @media (min-width: 1200px) {
   .type {
     width: 920px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
   }
 
   .type__wrapper {
@@ -151,6 +144,6 @@
   }
 
   .type__list {
-    width: 810px;
+    width: 808px;
   }
 }

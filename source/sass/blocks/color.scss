@@ -1,38 +1,24 @@
-.color {
-  margin-bottom: 2px;
-}
-
-.color ul {
+.color__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .color__legend {
-  position: relative;
+  @include headline;
+
   font-size: 17px;
   line-height: 16px;
-  font-weight: bold;
-  color: #63d1bb;
-  text-transform: uppercase;
 
-  margin-bottom: 33px;
+  margin-bottom: 36px;
 }
 
-.color__legend::before {
-  position: absolute;
-  content: "";
-
-  top: 8px;
-  left: 62px;
-
-  width: 198px;
-  height: 1px;
-
-  background-color: #62d1ba;
+.color__legend span {
+  background-color: #ffffff;
 }
 
-.color label {
+.color__label {
+  display: block;
   position: relative;
 
   font-size: 17px;
@@ -44,15 +30,15 @@
 }
 
 .color__option {
-  margin-bottom: 37px;
+  margin-bottom: 43px;
 }
 
-.color__input-checkbox + label::before {
+.color__input-checkbox + .color__label::before {
   position: absolute;
   content: "";
 
-  top: -8px;
-  left: 1px;
+  top: -10px;
+  left: 0;
 
   width: 36px;
   height: 35px;
@@ -62,24 +48,25 @@
   cursor: pointer;
 }
 
-.color__input-checkbox:hover + label::before,
-.color__input-checkbox:focus + label::before {
+.color__input-checkbox:hover + .color__label::before,
+.color__input-checkbox:focus + .color__label::before {
   border: 2px solid #62d1ba;
 }
 
-.color__input-checkbox:active + label::before {
+.color__input-checkbox:active + .color__label::before {
   border: 2px solid #c7c7c7;
 }
 
-.color__input-checkbox:checked + label::after {
+.color__input-checkbox:checked + .color__label::after {
+  display: block;
   position: absolute;
   content: "";
 
-  top: -2px;
-  left: 5px;
+  top: 1px;
+  left: 9px;
 
-  width: 33px;
-  height: 23px;
+  width: 22px;
+  height: 16px;
 
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
@@ -104,12 +91,15 @@
     align-items: flex-start;
 
     width: 668px;
-    margin-top: 62px;
-    margin-bottom: 12px;
+    margin-top: 73px;
   }
 
   .color__legend {
-    margin-top: 5px;
+    margin-top: -6px;
+  }
+
+  .color__legend span {
+    background-color: #f1f1f1;
   }
 
   .color__list {
@@ -124,7 +114,7 @@
 
   .color__option {
     width: 200px;
-    margin-bottom: 52px;
+    margin-bottom: 77px;
   }
 
   .color__list li:nth-child(odd) {
@@ -135,23 +125,26 @@
     display: none;
   }
 
-  .color label {
+  .color__label {
     font-size: 19px;
     line-height: 0;
     padding-left: 82px;
 
   }
 
-  .color__input-checkbox + label::before {
-    top: -10px;
+  .color__input-checkbox + .color__label::before {
+    top: -23px;
 
     width: 50px;
     height: 48px;
   }
 
-  .color__input-checkbox:checked + label::after {
-    top: 6px;
+  .color__input-checkbox:checked + .color__label::after {
+    top: -6px;
     left: 12px;
+
+    width: 33px;
+    height: 22px;
   }
 }
 
@@ -161,7 +154,7 @@
   }
 
   .color__list {
-    width: 814px;
+    width: 811px;
   }
 
   .color__option {

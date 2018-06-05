@@ -1,26 +1,14 @@
-.add-info legend {
-  position: relative;
+.add-info__legend {
+  @include headline;
 
   font-size: 17px;
   line-height: 16px;
-  font-weight: bold;
-  color: #63d1bb;
-  text-transform: uppercase;
 
   margin-bottom: 25px;
 }
 
-.add-info legend::before {
-  position: absolute;
-  content: "";
-
-  top: 8px;
-  left: 62px;
-
-  width: 198px;
-  height: 1px;
-
-  background-color: #62d1ba;
+.add-info__legend span {
+  background-color: #ffffff;
 }
 
 .add-info__textarea {
@@ -63,11 +51,11 @@
     width: 668px;
   }
 
-  .add-info legend {
+  .add-info__legend {
     margin-top: 17px;
   }
 
-  .add-info legend::before {
+  .add-info__legend::before {
     display: none;
   }
 
@@ -91,8 +79,8 @@
     width: 923px;
   }
 
-  .add-info legend {
-    margin-right: 73px;
+  .add-info__legend {
+    margin-right: 53px;
   }
 
   .add-info__textarea {

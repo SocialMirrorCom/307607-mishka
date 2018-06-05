@@ -54,15 +54,17 @@
       <form class="form__container" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form__fieldset form__type type">
           <div class="type__wrapper">
-          <legend class="type__legend">Тип</legend>
+          <legend class="type__legend">
+            <span>Тип</span>
+          </legend>
           <ul class="type__list">
             <li class="type__option">
               <input class="visually-hidden type__input type__input-radio" type="radio" name="type-group" value="home-accessories" id="home-accessories" checked>
-              <label for="home-accessories">Аксессуар для интерьера</label>
+              <label class="type__label" for="home-accessories">Аксессуар для интерьера</label>
             </li>
             <li class="type__option">
               <input class="visually-hidden type__input type__input-radio" type="radio" name="type-group" value="kids-toy" id="kids-toy">
-              <label for="kids-toy">Детская игрушка</label>
+              <label class="type__label" for="kids-toy">Детская игрушка</label>
             </li>
           </ul>
           </div>
@@ -70,31 +72,33 @@
         <div class="form__fieldset-wrapper">
         <fieldset class="form__fieldset form__color color">
           <div class="color__wrapper">
-              <legend class="color__legend">Цвет</legend>
+              <legend class="color__legend">
+                <span>Цвет</span>
+              </legend>
               <ul class="color__list">
                 <li class="color__option">
                   <input class="visually-hidden color__input color__input-checkbox" type="checkbox" name="white" id="white" checked>
-                  <label for="white">Белый</label>
+                  <label class="color__label" for="white">Белый</label>
                 </li>
                 <li class="color__option">
                   <input class="visually-hidden color__input color__input-checkbox" type="checkbox" name="grey" id="grey" checked>
-                  <label for="grey">Серый</label>
+                  <label class="color__label" for="grey">Серый</label>
                 </li>
                 <li class="color__option">
                   <input class="visually-hidden color__input color__input-checkbox" type="checkbox" name="tiffany" id="tiffany">
-                  <label for="tiffany">&#171;Тиффани&#187;</label>
+                  <label class="color__label" for="tiffany">&#171;Тиффани&#187;</label>
                 </li>
                 <li class="color__option">
                   <input class="visually-hidden color__input color__input-checkbox" type="checkbox" name="black" id="black">
-                  <label for="black">Черный</label>
+                  <label class="color__label" for="black">Черный</label>
                 </li>
                 <li class="color__option">
                   <input class="visually-hidden color__input color__input-checkbox" type="checkbox" name="rose" id="rose">
-                  <label for="rose">Розовый</label>
+                  <label class="color__label" for="rose">Розовый</label>
                 </li>
                 <li class="color__option">
                   <input class="visually-hidden color__input color__input-checkbox" type="checkbox" name="orange" id="orange">
-                  <label for="orange">Оранжевый</label>
+                  <label class="color__label" for="orange">Оранжевый</label>
                 </li>
               </ul>
               </div>
@@ -102,18 +106,20 @@
             </div>
             <fieldset class="form__fieldset form__name name">
               <div class="name__wrapper">
-              <legend class="name__legend">фио</legend>
+              <legend class="name__legend">
+                <span>фио</span>
+              </legend>
                 <ul class="name__list">
                   <li class="name__option">
-                    <label for="name">Имя:</label>
+                    <label class="name__label" for="name">Имя:</label>
                     <input class="name__input name__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
                   </li>
                   <li class="name__option">
-                    <label for="surname">Фамилия:</label>
+                    <label class="name__label" for="surname">Фамилия:</label>
                     <input class="name__input name__input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
                   </li>
                   <li class="name__option">
-                    <label for="patronymic">Отчество:</label>
+                    <label class="name__label" for="patronymic">Отчество:</label>
                     <input class="name__input name__input--patronymic" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
                   </li>
                 </ul>
@@ -122,7 +128,9 @@
             <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset form__phone phone">
               <div class="phone__wrapper">
-              <legend class="phone__legend">тел</legend>
+              <legend class="phone__legend">
+                <span>тел</span>
+              </legend>
               <input class="phone__input phone__input-text" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
               <svg class="phone__icon-phone" width="25" height="25"><use xlink:href="#icon-phone"></use></svg>
               </div>
@@ -131,7 +139,9 @@
             <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset form__email email">
               <div class="email__wrapper">
-              <legend class="email__legend">E-mail</legend>
+              <legend class="email__legend">
+                <span>E-mail</span>
+              </legend>
               <input class="email__input email__input-text" type="tel" name="email" id="email" placeholder="Ваш Email*">
               <svg class="email__icon-mail" width="32" height="32"><use xlink:href="#icon-mail"></use></svg>
               </div>
@@ -139,7 +149,9 @@
           </div>
             <fieldset class="form__fieldset form__add-info add-info">
               <div class="add-info__wrapper">
-              <legend class="add-info__legend">доп</legend>
+              <legend class="add-info__legend">
+                <span>доп</span>
+              </legend>
               <textarea class="add-info__textarea" name="add-info" id="add-info" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </fieldset>

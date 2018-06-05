@@ -4,28 +4,21 @@
   margin-bottom: 32px;
 }
 
-.email legend {
+.email__wrapper {
   position: relative;
+}
+
+.email__legend {
+  @include headline;
+
   font-size: 17px;
   line-height: 16px;
-  font-weight: bold;
-  color: #63d1bb;
-  text-transform: uppercase;
 
   margin-bottom: 5px;
 }
 
-.email legend::before {
-  position: absolute;
-  content: "";
-
-  top: 8px;
-  left: 82px;
-
-  width: 179px;
-  height: 1px;
-
-  background-color: #62d1ba;
+.email__legend span {
+  background-color: #ffffff;
 }
 
 .email__input {
@@ -55,8 +48,8 @@
   width: 32px;
   height: 32px;
 
-  top: 34px;
-  right: 5px;
+  bottom: 9px;
+  right: 6px;
 
   fill: #d6d6d6;
 }
@@ -87,6 +80,10 @@
     margin-top: 19px;
   }
 
+  .email__legend span {
+    background-color: #f1f1f1;
+  }
+
   .email__legend::before {
     display: none;
   }
@@ -103,7 +100,7 @@
   }
 
   .email__icon-mail {
-    top: 28px;
+    bottom: 8px;
     right: 21px;
   }
 }
@@ -116,7 +113,7 @@
 
   .email__legend {
     margin-top: 21px;
-    margin-right: 55px;
+    margin-right: 35px;
   }
 
   .email__input {
