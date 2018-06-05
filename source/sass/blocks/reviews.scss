@@ -28,16 +28,21 @@
   left: 0;
 }
 
+.reviews__list {
+  margin-bottom: 33px;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
 .reviews__text {
   line-height: 30px;
   margin: 0;
   padding: 0;
   margin-top: 24px;
   margin-bottom: 27px;
-}
-
-.reviews__author {
-  margin-bottom: 33px;
 }
 
 .reviews__author-name {
@@ -47,8 +52,6 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 6px;
-
 }
 
 .reviews__insta-account {
@@ -56,6 +59,7 @@
 
   margin: 0;
   padding: 0;
+  margin-top: 6px;
 }
 
 .reviews__toggles {
@@ -97,6 +101,7 @@
   }
 
   .reviews__wrapper{
+    position: relative;
     width: 669px;
   }
 
@@ -124,15 +129,27 @@
     margin-bottom: 57px;
   }
 
-  .reviews__author {
-    margin-bottom: 0;
-  }
-
   .reviews__write {
     position: static;
 
     width: 171px;
     margin-top: 4px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    content: "";
+
+    bottom: 44px;
+    right: 0;
+
+    width: 175px;
+    height: 60px;
   }
 
   .reviews__toggle {
@@ -172,5 +189,10 @@
   .reviews__text {
     margin-bottom: 38px;
     padding-right: 100px;
+  }
+
+  .reviews__toggles {
+    bottom: 93px;
+    right: -3px;
   }
 }
