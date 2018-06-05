@@ -24,7 +24,7 @@
   display: block;
 }
 
-.video__container::before {
+.video__button {
   position: absolute;
   content: "";
 
@@ -37,17 +37,20 @@
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: transparent;
 
   z-index: 30;
   cursor: pointer;
+  border: none;
+
 }
 
-.video__container:hover::before,
-.video__container:focus::before {
+.video__button:hover,
+.video__button:focus {
   transform: scale(1.2);
 }
 
-.video__container:active::before {
+.video__button:active {
   transform: scale(0.8);
   opacity: 0.3;
 }
@@ -124,7 +127,7 @@
     margin-top: 0;
   }
 
-  .video__container::before {
+  .video__button {
     top: 189px;
     left: 284px;
   }
@@ -185,7 +188,7 @@
     margin-left: 81px;
   }
 
-  .video__container::before {
+  .video__button {
     top: 188px;
     left: 291px;
   }
