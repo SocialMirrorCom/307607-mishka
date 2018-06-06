@@ -19,6 +19,8 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 7px;
+
+  z-index: 10;
 }
 
 .contacts__wrapper {
@@ -137,7 +139,7 @@
   left: auto;
   right: auto;
 
-  z-index: 20;
+  z-index: 30;
 }
 
 @media (min-width: $tablet-width) {
@@ -171,6 +173,8 @@
     margin-top: 78px;
     margin-bottom: 49px;
     margin-left: -4px;
+
+    z-index: 20;
   }
 
   .contacts__title::before {
@@ -186,8 +190,6 @@
     background-image: url("/img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-
-    z-index: 30;
   }
 
   .contacts__all {
@@ -220,10 +222,10 @@
     padding-bottom: 98px;
   }
 
-  .contacts__map::before {
+  /*.contacts__map::before {
     top: 139px;
     left: 365px;
-  }
+  }*/
 
   .contacts__write {
     width: 227px;
@@ -282,9 +284,9 @@
     margin-bottom: 0;
   }
 
-  .contacts__map::before {
+  /*.contacts__map::before {
     left: 241px;
-  }
+  }*/
 
   .contacts__all {
     flex-direction: column;

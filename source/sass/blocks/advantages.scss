@@ -103,11 +103,13 @@
 
   .advantages::before {
     top: -62px;
-    left: -62px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 768px;
-    height: 17px;
-    background-position: 0 0;
-    background-size: 100% 17px;
+    height: 15px;
+    background-size: 768px auto;
+    background-repeat: repeat-x;
+    background-position: left 0px top;
   }
 
   .advantages__title {
@@ -177,10 +179,13 @@
 
   .advantages::before {
     top: -40px;
-    left: -175px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1050px;
     height: 23px;
-    background-size: auto 23px;
+    background-size: 1050px auto;
+    background-repeat: repeat-x;
+    background-position: left 29px top;
   }
 
   .advantages__title {
