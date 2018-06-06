@@ -116,7 +116,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-main {
     width: 100%;
   }
@@ -193,7 +193,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .page-main__title {
     font-size: 53px;
     line-height: 57px;

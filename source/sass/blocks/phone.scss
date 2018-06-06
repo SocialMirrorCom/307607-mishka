@@ -62,7 +62,7 @@
   fill: #62d1ba;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .phone {
     margin-bottom: 0;
   }
@@ -107,7 +107,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .phone__wrapper {
     width: 924px;
     justify-content: flex-start;

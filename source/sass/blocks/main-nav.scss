@@ -115,7 +115,7 @@
   color: #000000;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
 
@@ -153,7 +153,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -189,7 +189,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .main-nav__wrapper {
     width: 1048px;
   }

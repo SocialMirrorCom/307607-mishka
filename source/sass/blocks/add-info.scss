@@ -36,7 +36,7 @@
   color: #d6d6d6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .add-info {
     margin-top: 50px;
     margin-bottom: 53px;
@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .add-info {
     margin-bottom: 49px;
   }

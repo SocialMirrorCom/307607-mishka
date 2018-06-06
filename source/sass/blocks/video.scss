@@ -111,7 +111,7 @@
   margin-left: 34px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .video {
     margin-top: 8px;
   }
@@ -160,7 +160,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .video {
     margin-top: 6px;
   }

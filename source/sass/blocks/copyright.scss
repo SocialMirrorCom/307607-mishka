@@ -65,7 +65,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .copyright {
     width: 183px;
     margin-left: auto;
@@ -85,7 +85,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $desktop-width) {
   .copyright__text {
     margin-top: 25px;
   }

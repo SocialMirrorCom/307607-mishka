@@ -89,7 +89,7 @@
   margin-bottom: 26px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .popular-items {
     width: 668px;
     margin-bottom: 115px;
@@ -195,7 +195,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .popular-items {
     width: 1048px;
   }

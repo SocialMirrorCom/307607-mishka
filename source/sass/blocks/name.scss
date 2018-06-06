@@ -51,7 +51,7 @@
   color: #d6d6d6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .name {
     margin-top: 51px;
     margin-bottom: 25px;
@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .name {
     margin-top: 52px;
   }

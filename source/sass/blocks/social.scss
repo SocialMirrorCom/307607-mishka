@@ -56,7 +56,7 @@
   height: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .social {
     width: 200px;
     margin-top: 3px;

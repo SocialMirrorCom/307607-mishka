@@ -30,7 +30,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-header {
     display: flex;
     flex-direction: row;
@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .page-header__wrapper {
     position: relative;
     width: 1048px;

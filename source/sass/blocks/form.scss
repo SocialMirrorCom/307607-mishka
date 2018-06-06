@@ -59,7 +59,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .form__title {
     position: relative;
 
@@ -116,7 +116,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .form__title {
     font-size: 53px;
     line-height: 57px;

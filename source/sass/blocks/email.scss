@@ -60,7 +60,7 @@
   fill: #62d1ba;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .email {
     padding-top: 15px;
     padding-bottom: 30px;
@@ -105,7 +105,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .email__wrapper {
     width: 927px;
     justify-content: flex-start;

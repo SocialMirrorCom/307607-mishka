@@ -21,7 +21,7 @@
   background-color: #f1f1f1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog__title {
     position: relative;
     align-items: flex-start;
@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .catalog__title {
     height: 155px;
 
