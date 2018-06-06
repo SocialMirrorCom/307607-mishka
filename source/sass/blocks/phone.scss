@@ -22,6 +22,10 @@
 }
 
 .phone__input {
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+
   width: 260px;
   height: 50px;
   border: none;
@@ -90,6 +94,9 @@
   }
 
   .phone__input {
+    font-size: 19px;
+
+    padding-left: 17px;
     height: 51px;
     width: 500px;
     margin-bottom: 7px;
@@ -98,7 +105,6 @@
 
   .phone__input::placeholder {
     font-size: 19px;
-    padding-left: 17px;
   }
 
   .phone__icon-phone {
