@@ -1,17 +1,20 @@
 .modal {
+  display: none;
   display: flex;
   justify-content: center;
+  position: fixed;
 
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 
   width: 320px;
   min-height: 338px;
   border: 1px solid #ededed;
+  box-shadow: 0 5px 10px rgba(0,1,1,.23);
 
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
-  }
+  background-color: #ffffff;
+  z-index: 100;
 }
 
 .modal__wrapper {
@@ -108,12 +111,41 @@
 
   border: 1px solid #63d1bb;
   background-color: #63d1bb;
+
+  cursor: pointer;
+}
+
+.modal__show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .modal {
     width: 566px;
     min-height: 335px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .modal__wrapper {

@@ -73,7 +73,7 @@
               <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
               <div class="catalog-item__bottom">
                 <span class="catalog-item__price">1 200 руб.</span>
-                <a href="#" class="catalog-item__order-link" aria-label="Заказать">
+                <a href="#" class="catalog-item__order-link button--add-to-cart" aria-label="Заказать">
                   <svg class="catalog-item__icon-cart" width="21" height="19"><use xlink:href="#icon-cart"></use></svg>
                 </a>
               </div>
@@ -99,7 +99,7 @@
               <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
               <div class="catalog-item__bottom">
                 <span class="catalog-item__price">690 руб.</span>
-                <a href="#" class="catalog-item__order-link" aria-label="Заказать">
+                <a href="#" class="catalog-item__order-link button--add-to-cart" aria-label="Заказать">
                   <svg class="catalog-item__icon-cart" width="21" height="19"><use xlink:href="#icon-cart"></use></svg>
                 </a>
               </div>
@@ -125,7 +125,7 @@
               <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
               <div class="catalog-item__bottom">
                 <span class="catalog-item__price">1 500 руб.</span>
-                <a href="#" class="catalog-item__order-link" aria-label="Заказать">
+                <a href="#" class="catalog-item__order-link button--add-to-cart" aria-label="Заказать">
                   <svg class="catalog-item__icon-cart" width="21" height="19"><use xlink:href="#icon-cart"></use></svg>
                 </a>
               </div>
@@ -188,6 +188,31 @@
         </div>
       </div>
     </footer>
+    <div class="cover">
+    </div>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__fieldset">
+        <ul class="modal__list">
+          <li class="modal__option">
+              <input class="visually-hidden modal__input" type="radio" name="size" value="s" id="size-s" checked>
+              <label class="modal__label" for="size-s">S</label>
+            </li>
+            <li class="modal__option">
+              <input class="visually-hidden modal__input" type="radio" name="size" value="m" id="size-m">
+              <label class="modal__label" for="size-m">M</label>
+            </li>
+            <li class="modal__option">
+              <input class="visually-hidden modal__input" type="radio" name="size" value="l" id="size-l">
+              <label class="modal__label" for="size-l">L</label>
+            </li>
+        </ul>
+        <button class="modal__add-to-cart" type="submit">Добавить</button>
+      </div>
+    </section>
     <script src="js/script.min.js"></script>
   </body>
 </html>
