@@ -212,11 +212,22 @@
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
-        <div class="modal__size-list">
-          <button class="modal__size-item" type="button" aria-label="Размер S">S</button>
-          <button class="modal__size-item" type="button" aria-label="Размер M">M</button>
-          <button class="modal__size-item" type="button" aria-label="Размер L">L</button>
-        </div>
+        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__fieldset">
+        <ul class="modal__list">
+          <li class="modal__option">
+              <input class="visually-hidden modal__input" type="radio" name="size" value="s" id="size-s" checked>
+              <label class="modal__label" for="size-s">S</label>
+            </li>
+            <li class="modal__option">
+              <input class="visually-hidden modal__input" type="radio" name="size" value="m" id="size-m">
+              <label class="modal__label" for="size-m">M</label>
+            </li>
+            <li class="modal__option">
+              <input class="visually-hidden modal__input" type="radio" name="size" value="l" id="size-l">
+              <label class="modal__label" for="size-l">L</label>
+            </li>
+        </ul>
         <button class="modal__add-to-cart" type="button">Добавить</button>
       </div>
     </section>
