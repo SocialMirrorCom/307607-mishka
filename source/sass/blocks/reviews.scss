@@ -98,9 +98,14 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
-  .reviews__wrapper{
+  .reviews__wrapper {
     position: relative;
     width: 669px;
   }
@@ -120,7 +125,6 @@
 
     margin-left: -2px;
     margin-bottom: 3px;
-
   }
 
   .reviews__text {
@@ -172,7 +176,7 @@
     margin-top: 73px;
   }
 
-  .reviews__wrapper{
+  .reviews__wrapper {
     margin-left: 175px;
     width: 875px;
   }

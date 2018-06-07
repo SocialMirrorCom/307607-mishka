@@ -14,7 +14,7 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-var addToCart = document.querySelectorAll(".button--add-to-cart");
+/*var addToCart = document.querySelectorAll(".button--add-to-cart");
 var popup = document.querySelector(".modal");
 
 if (addToCart) {
@@ -24,4 +24,4 @@ if (addToCart) {
       popup.classList.add("modal-show");
     });
   };
-};
+};*/

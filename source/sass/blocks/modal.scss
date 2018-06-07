@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  /*display: none;*/
   display: flex;
   justify-content: center;
   position: fixed;
@@ -11,7 +11,7 @@
   width: 320px;
   min-height: 338px;
   border: 1px solid #ededed;
-  box-shadow: 0 5px 10px rgba(0,1,1,.23);
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.23);
 
   background-color: #ffffff;
   z-index: 100;
@@ -38,7 +38,6 @@
   margin-top: 35px;
   margin-bottom: 17px;
   width: 150px;
-
 }
 
 .modal__text {
