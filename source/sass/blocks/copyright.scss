@@ -1,7 +1,7 @@
 .copyright {
   position: relative;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 
   width: 320px;
 }
@@ -69,7 +69,7 @@
   .copyright {
     width: 183px;
     margin-left: auto;
-    margin-top: -28px;
+    padding-top: 34px;
   }
 
   .copyright::before {
@@ -78,6 +78,7 @@
 
   .copyright__logo {
     left: 0;
+    top: 24px;
   }
 
   .copyright__text {
@@ -86,7 +87,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 37px;
+  }
+
   .copyright__text {
     margin-top: 25px;
+  }
+
+  .copyright__logo {
+    top: 18px;
   }
 }

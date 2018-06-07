@@ -28,12 +28,12 @@
   .page-footer {
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 142px;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
+    align-items: stretch;
     width: 668px;
   }
 
@@ -43,6 +43,7 @@
     width: 108px;
     height: 37px;
     margin-right: 111px;
+    padding-top: 51px;
   }
 }
 
@@ -54,5 +55,6 @@
   .page-footer__logo {
     height: 40px;
     margin-right: 301px;
+    padding-top: 53px;
   }
 }

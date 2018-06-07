@@ -59,6 +59,12 @@
 @media (min-width: $tablet-width) {
   .social {
     width: 200px;
-    margin-top: 3px;
+    padding-top: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-top: 35px;
   }
 }
