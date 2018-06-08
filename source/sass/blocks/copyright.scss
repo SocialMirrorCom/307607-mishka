@@ -1,7 +1,7 @@
 .copyright {
   position: relative;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 
   width: 320px;
 }
@@ -65,11 +65,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .copyright {
-    width: 190px;
+    width: 183px;
     margin-left: auto;
-    margin-top: -28px;
+    padding-top: 34px;
   }
 
   .copyright::before {
@@ -77,10 +77,25 @@
   }
 
   .copyright__logo {
-    left: 4px;
+    left: 0;
+    top: 24px;
   }
 
   .copyright__text {
     margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 37px;
+  }
+
+  .copyright__text {
+    margin-top: 25px;
+  }
+
+  .copyright__logo {
+    top: 18px;
   }
 }

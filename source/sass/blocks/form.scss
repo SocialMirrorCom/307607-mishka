@@ -1,0 +1,142 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__title {
+  display: flex;
+  justify-content: center;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 71px;
+  width: 100%;
+  min-height: 106px;
+  background-color: #f1f1f1;
+}
+
+.form__text {
+  font-size: 13px;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 24px;
+  width: 260px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__container {
+  width: 260px;
+}
+
+.form__star {
+  font-size: 14px;
+  line-height: 16px;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 31px;
+}
+
+.form__button {
+  line-height: 16px;
+
+  width: 260px;
+  margin-bottom: 55px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    position: relative;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    min-height: 133px;
+    padding-top: 93px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 208px;
+    background-size: 100% 34px;
+  }
+
+  .form__text {
+    font-size: 17px;
+    line-height: 30px;
+
+    width: 668px;
+    margin-top: 71px;
+    margin-bottom: 72px;
+  }
+
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 668px;
+    margin-bottom: 50px;
+  }
+
+  .form__star {
+    font-size: 17px;
+    line-height: 30px;
+    order: 1;
+
+    margin-bottom: 0;
+    margin-top: 9px;
+  }
+
+  .form__button {
+    width: 230px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    min-height: 156px;
+    margin-bottom: 56px;
+    background-position: 0 235px;
+    background-size: 1150px 34px;
+  }
+
+  .form__text {
+    width: 713px;
+    margin-top: 69px;
+    margin-left: 13px;
+  }
+
+  .form__bottom {
+    width: 699px;
+    margin-left: 3px;
+  }
+}

@@ -1,0 +1,129 @@
+.name {
+  margin-bottom: 14px;
+}
+
+.name__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.name__legend {
+  @include headline;
+
+  font-size: 17px;
+  line-height: 16px;
+
+  margin-bottom: 26px;
+}
+
+.name__legend span {
+  background-color: #ffffff;
+}
+
+.name__label {
+  position: relative;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.name__input {
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+
+  width: 260px;
+  height: 44px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 19px;
+}
+
+.name__input:hover,
+.name__input:focus,
+.name__input:active {
+  outline: none; /*убрала outline, чтобы было видно, что состояние работает*/
+  border-bottom: 2px solid #62d1ba;
+}
+
+.name__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #d6d6d6;
+}
+
+@media (min-width: $tablet-width) {
+  .name {
+    margin-top: 51px;
+    margin-bottom: 25px;
+  }
+
+  .name__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 668px;
+  }
+
+  .name__legend {
+    margin-top: 16px;
+    width: 70px;
+  }
+
+  .name__legend::before {
+    display: none;
+  }
+
+  .name__list {
+    width: 500px;
+  }
+
+  .name__label {
+    font-size: 19px;
+    margin-right: 22px;
+  }
+
+  .name__input {
+    font-size: 19px;
+
+    width: 356px;
+    height: 47px;
+    padding-left: 16px;
+    margin-bottom: 25px;
+  }
+
+  .name__input--name {
+    width: 408px;
+  }
+
+  .name__input::placeholder {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name {
+    margin-top: 52px;
+  }
+
+  .name__wrapper {
+    width: 927px;
+  }
+
+  .name__list {
+    width: 810px;
+  }
+
+  .name__input {
+    width: 556px;
+  }
+
+  .name__input--name {
+    width: 608px;
+  }
+}

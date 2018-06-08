@@ -54,7 +54,7 @@
   fill: #d0f1ea;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .user-list__cart {
     text-align: right;
     width: 210px;

@@ -13,3 +13,15 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+/*var addToCart = document.querySelectorAll(".button--add-to-cart");
+var popup = document.querySelector(".modal");
+
+if (addToCart) {
+  for (var i = 0; var < addToCart.length; i++) {
+    addToCart[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
+  };
+};*/

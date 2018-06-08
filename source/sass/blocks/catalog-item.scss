@@ -114,12 +114,20 @@
   }
 }
 
-@media (min-width: 768px) {
+.catalog-item img {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
   .catalog-item {
     flex-direction: row;
     width: 668px;
     min-height: 333px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
+  }
+
+  .catalog-item:last-child {
+    margin-bottom: 45px;
   }
 
   .catalog-item__title {
@@ -158,7 +166,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .catalog-item {
     flex-direction: column;
     width: 315px;

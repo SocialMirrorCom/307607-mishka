@@ -5,13 +5,13 @@
   width: 260px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog-items__wrapper {
     width: 668px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .catalog-items__wrapper {
     flex-direction: row;
     flex-wrap: wrap;

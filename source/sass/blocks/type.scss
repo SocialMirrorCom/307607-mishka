@@ -1,0 +1,150 @@
+.type__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.type__legend {
+  @include headline;
+
+  font-size: 17px;
+  line-height: 16px;
+
+  margin-bottom: 33px;
+}
+
+.type__legend span {
+  background-color: #ffffff;
+}
+
+.type__label {
+  display: block;
+  position: relative;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+
+  padding-left: 63px;
+  min-height: 36px;
+}
+
+.type__option {
+  margin-bottom: 25px;
+}
+
+.type__option:last-child {
+  margin-bottom: 26px;
+}
+
+.type__input-radio + .type__label::before {
+  position: absolute;
+  content: "";
+
+  top: -9px;
+  left: 0;
+
+  width: 36px;
+  height: 36px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.type__input-radio:hover + .type__label::before,
+.type__input-radio:focus + .type__label::before {
+  border: 2px solid #62d1ba;
+}
+
+.type__input-radio:active + .type__label::before {
+  border: 2px solid #c7c7c7;
+}
+
+.type__input-radio:checked + .type__label::after {
+  position: absolute;
+  content: "";
+
+  top: 4px;
+  left: 12px;
+
+  width: 14px;
+  height: 14px;
+
+  border: 1px solid #62d1ba;
+  border-radius: 50%;
+  background-color: #62d1ba;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .type {
+    width: 668px;
+    margin-bottom: 25px;
+  }
+
+  .type__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 668px;
+  }
+
+  .type__legend {
+    width: 70px;
+    margin-top: 2px;
+  }
+
+  .type__list {
+    width: 500px;
+  }
+
+  .type__option {
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
+
+  .type__label {
+    font-size: 19px;
+    padding-left: 0;
+  }
+
+  .type__legend::before {
+    display: none;
+  }
+
+  .type__input-radio + .type__label::before {
+    width: 48px;
+    height: 48px;
+    top: -15px;
+    left: -80px;
+  }
+
+  .type__input-radio:checked + .type__label::after {
+    top: 0;
+    left: -65px;
+
+    width: 19px;
+    height: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    width: 920px;
+    margin-bottom: 24px;
+  }
+
+  .type__wrapper {
+    width: 920px;
+  }
+
+  .type__list {
+    width: 808px;
+  }
+}

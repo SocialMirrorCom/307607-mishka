@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 77px;
 
   &:hover {
     opacity: 0.6;
@@ -30,7 +30,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-header {
     display: flex;
     flex-direction: row;
@@ -54,16 +54,16 @@
     position: absolute;
     content: "";
 
-    top: 20px;
+    top: 23px;
     left: 0;
 
-    width: 120px;
+    width: 111px;
     height: 50px;
     z-index: 10;
   }
 
   .page-header__logo img {
-    width: 120px;
+    width: 111px;
     height: 50px;
     margin: 0 auto;
   }
@@ -83,19 +83,19 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .page-header__wrapper {
     position: relative;
     width: 1048px;
   }
 
   .page-header__logo {
-    top: 5px;
+    top: 11px;
     left: 50%;
     transform: translateX(-50%);
 
-    width: 150px;
-    height: 79px;
+    width: 149px;
+    height: 73px;
   }
 
   .page-header__logo img {

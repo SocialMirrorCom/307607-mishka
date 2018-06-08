@@ -69,7 +69,7 @@ gulp.task("sprite", function () {
   .pipe(gulp.dest("build/img"));
 });
 
-/* Запускаем posthtml c плагином include, чтобы автоматически вставить спрайт в html файл ,минифицируем html
+/* Запускаем posthtml c плагином include, чтобы автоматически вставить спрайт в html файл, минифицируем html
 Команда gulp html*/
 
 gulp.task("html", function () {
