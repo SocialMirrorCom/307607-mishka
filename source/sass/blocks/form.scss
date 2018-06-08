@@ -53,10 +53,10 @@
 .form__button {
   line-height: 16px;
 
-  height: 52px;
   width: 260px;
   margin-bottom: 55px;
-  padding-top: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: transparent;
 }
 
@@ -124,7 +124,7 @@
 
     min-height: 156px;
     margin-bottom: 56px;
-    background-position: 15px 235px;
+    background-position: 0 235px;
     background-size: 1150px 34px;
   }
 
