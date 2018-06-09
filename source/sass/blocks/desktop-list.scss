@@ -1,0 +1,23 @@
+.desktop-list {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .desktop-list {
+    display: flex;
+    order: 5;
+    z-index: 50;
+  }
+
+  .desktop-list__item {
+    padding-top: 20px;
+    padding-right: 60px;
+  }
+
+  .desktop-list__link {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+}

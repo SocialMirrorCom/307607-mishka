@@ -39,7 +39,7 @@
   .site-list {
     display: flex;
     flex-direction: row;
-    order: 10;
+    order: 4;
     z-index: 30;
   }
 
@@ -61,6 +61,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list{
+    order: 1;
+    width: 470px;
+  }
+
   .site-list__link {
     font-size: 17px;
   }
@@ -79,27 +84,5 @@
 
   .site-list__item:nth-of-type(2) {
     padding-left: 34px;
-  }
-
-  .site-list__item:nth-of-type(4) {
-    padding-left: 30px;
-  }
-
-  .site-list__item--desktop {
-    display: block;
-    order: 10;
-    padding-top: 20px;
-  }
-
-  .site-list__link--desktop {
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .site-list {
-    flex-wrap: wrap;
-    order: 0;
-    margin-left: 0;
-    width: 470px;
   }
 }
