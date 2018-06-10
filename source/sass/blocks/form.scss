@@ -70,11 +70,12 @@
 
     min-height: 133px;
     padding-top: 93px;
+    margin-top: -64px;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-position: 0 208px;
-    background-size: 100% 34px;
+    background-position: 0 212px;
+    background-size: 100% 24px;
   }
 
   .form__text {
@@ -125,6 +126,7 @@
 
     min-height: 156px;
     margin-bottom: 56px;
+    margin-top: -56px;
     background-position: 0 235px;
     background-size: 1150px 34px;
   }
