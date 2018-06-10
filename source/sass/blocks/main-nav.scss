@@ -18,8 +18,8 @@
   display: block;
   position: absolute;
   content: "";
-  top: 25px;
-  right: 38px;
+  top: 29px;
+  right: 31px;
   z-index: 2;
 
   width: 21px;
@@ -192,8 +192,10 @@
 
   .main-nav__delivery {
     display: block;
+
     order: 5;
     margin-left: auto;
+    margin-top: 18px;
 
     z-index: 40;
   }
