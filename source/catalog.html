@@ -19,7 +19,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
         <div class="page-header__logo">
           <a href="index.html">
             <picture>
@@ -29,18 +29,14 @@
             </picture>
           </a>
         </div>
-        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list site-list">
               <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
               <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="catalog.html">Новые поступления</a></li>
-              <li class="site-list__item site-list__item--desktop"><a class="site-list__link site-list__link--desktop" href="form.html">Распродажа</a></li>
             </ul>
-            <form class ="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
-              <input class="main-nav__search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
-            </form>
+          <form class ="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-nav__search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту:">
+          </form>
             <ul class="main-nav__list user-list">
               <li class="user-list__item">
                 <a href="" class="user-list__cart">Корзина: пока пуста
@@ -48,10 +44,12 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </nav>
-        <p class="page-header__delivery">Бесплатная доставка по России</p>
-      </div>
+            <ul class="main-nav__list desktop-list">
+              <li class="desktop-list__item"><a class="desktop-list__link" href="catalog.html">Новые поступления</a></li>
+              <li class="desktop-list__item"><a class="desktop-list__link" href="form.html">Распродажа</a></li>
+            </ul>
+          <p class="main-nav__delivery">Бесплатная доставка по России</p>
+      </nav>
     </header>
     <main class="page-main catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
@@ -143,6 +141,9 @@
           <h2 class="visually-hidden">Видео с производства</h2>
           <div class="video__container">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео с производства">

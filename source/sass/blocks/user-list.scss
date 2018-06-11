@@ -55,6 +55,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .user-list {
+    order: 3;
+  }
+
   .user-list__cart {
     text-align: right;
     width: 210px;
@@ -74,5 +78,11 @@
   .user-list__icon-cart {
     top: 2px;
     left: -22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    order: 4;
   }
 }

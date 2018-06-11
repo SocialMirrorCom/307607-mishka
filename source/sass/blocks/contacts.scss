@@ -92,7 +92,7 @@
 
   width: 100%;
   height: 458px;
-  padding-bottom: 90px;
+  margin-bottom: 38px;
 }
 
 /*.contacts__map::before {
@@ -131,16 +131,7 @@
 }
 
 .contacts__write {
-  position: absolute;
-  content: "";
-
   width: 256px;
-
-  bottom: 0;
-  left: auto;
-  right: auto;
-
-  z-index: 30;
 }
 
 @media (min-width: $tablet-width) {
@@ -149,7 +140,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 
   .contacts::before {
@@ -163,7 +154,7 @@
   }
 
   .contacts__wrapper {
-    width: 669px;
+    width: 768px;
   }
 
   .contacts__title {
@@ -188,7 +179,7 @@
     height: 82px;
 
     top: -16px;
-    right: 0;
+    right: -2px;
 
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
@@ -222,7 +213,7 @@
 
   .contacts__map {
     width: 100%;
-    padding-bottom: 106px;
+    margin-bottom: 53px;
   }
 
   /*.contacts__map::before {
@@ -240,10 +231,9 @@
     flex-direction: row;
     justify-content: flex-end;
 
-
     width: 1052px;
-    min-height: 460px;
-    margin-bottom: 104px;
+    max-height: 460px;
+    margin-bottom: 194px;
   }
 
   .contacts::before {
@@ -257,17 +247,28 @@
   }
 
   .contacts__wrapper {
-    position: relative;
-    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 
     width: 875px;
-    margin-top: 85px;
+    max-height: 460px;
+    margin-top: 182px;
+  }
+
+  .contacts__info {
+    flex: none;
+    width: 348px;
+    order: 1;
+    min-height: 350px;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
+
     width: 880px;
+    margin-top: 72px;
   }
 
   .contacts__title::before {
@@ -276,16 +277,10 @@
   }
 
   .contacts__map {
-    position: absolute;
-    content: "";
-
+    flex: none;
+    order: 3;
     width: 527px;
     height: 460px;
-
-    top: 8px;
-    right: 0;
-
-    margin-top: 82px;
     margin-bottom: 0;
   }
 
@@ -297,11 +292,17 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    margin-bottom: 79px;
+    margin-bottom: 78px;
+  }
+
+  .contacts__button {
+    flex: none;
+    width: 348px;
+    order: 2;
+    margin-top: auto;
   }
 
   .contacts__write {
-    position: static;
     width: 227px;
   }
 }
