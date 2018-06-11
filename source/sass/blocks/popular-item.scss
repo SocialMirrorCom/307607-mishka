@@ -4,7 +4,6 @@
 }
 
 .popular-item {
-  position: relative;
   min-height: 824px;
 }
 
@@ -66,16 +65,10 @@
 }
 
 .popular-item__image {
-  padding-bottom: 150px;
+  margin-bottom: 16px;
 }
 
 .popular-item__bottom {
-  position: absolute;
-  content: "";
-
-  bottom: 0;
-  right: 0;
-
   width: 258px;
   height: 142px;
 }
@@ -136,17 +129,21 @@
 
   .popular-item__middle {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-    min-height: 404px;
+    max-height: 404px;
+    width: 668px;
   }
 
   .popular-item__information {
     display: flex;
     flex-direction: column;
 
+    width: 336px;
     margin-top: -7px;
+    margin-bottom: 50px;
+    order: 1;
   }
 
   .popular-item__description {
@@ -168,6 +165,7 @@
     width: 332px;
     height: 404px;
     padding-bottom: 0;
+    order: 3;
   }
 
   /*.popular-item__image img {
@@ -177,17 +175,18 @@
   }*/
 
   .popular-item__bottom {
-    position: static;
-    width: 294px;
+    width: 336px;
     height: 114px;
     margin-top: auto;
+    order: 2;
   }
 
   .popular-item__price {
     font-size: 20px;
     line-height: 24px;
     width: 294px;
-    margin-bottom: 38px;
+    margin-top: 5px;
+    margin-bottom: 33px;
   }
 
   .popular-item__buy {
@@ -209,18 +208,23 @@
   }
 
   .popular-item__top {
-    position: relative;
-    display: block;
-    height: 175px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10;
+
+    margin-top: 79px;
   }
 
   .popular-item__middle {
-    height: 636px;
-    margin-top: -100px;
+    margin-left: 175px;
+    margin-top: -159px;
+    width: 875px;
+    max-height: 636px;
   }
 
   .popular-item__information {
-    margin-left: 175px;
+    width: 351px;
+    margin-bottom: 102px;
   }
 
   .popular-item__title {
@@ -228,18 +232,21 @@
     line-height: 57px;
 
     width: 600px;
-    margin-left: 171px;
-    padding-top: 78px;
+    margin-top: 0;
+    margin-left: 26px;
+
+    order: 2;
   }
 
   .popular-item__marker {
-    position: absolute;
-    content: "";
-
+    display: block;
     line-height: 17px;
-    top: 82px;
-    left: 43px;
+    text-align: center;
     width: 80px;
+    margin-top: 5px;
+    margin-left: 44px;
+
+    order: 1;
   }
 
   .popular-item__description {
@@ -254,6 +261,7 @@
 
   .popular-item__bottom {
     height: 109px;
+    width: 351px;
   }
 
   .popular-item__price {
