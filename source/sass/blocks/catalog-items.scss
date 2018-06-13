@@ -15,7 +15,8 @@
   .catalog-items__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
     width: 1048px;
+    min-height: 658px;
   }
 }
